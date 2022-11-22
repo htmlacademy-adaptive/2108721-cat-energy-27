@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Roman Tsarew](https://up.htmlacademy.ru/adaptive/27/user/2108721).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
