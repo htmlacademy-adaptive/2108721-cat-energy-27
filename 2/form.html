@@ -11,7 +11,7 @@
   <header class="main-header">
     <a class="logo" href="index.html">
       <img src="../image/logo-cat.svg" width="34" height="38" alt="Кот в маске Бэтмена показывает язык.">
-      <img src="../image/logo-text.svg" width="102" height="18" alt="Надпись CAT ENERGY.">
+      <img src="../image/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -19,14 +19,14 @@
       </button>
       <div class="main-nav__container">
         <ul class="main-nav__list">
-          <li class="site-list__item ">
-            <a class="site-list__link" href="index.html">Главная</a>
+          <li class="main-nav__item ">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Подбор программы</a>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -40,13 +40,13 @@
       <fieldset class="program__field data-field field">
         <legend class="visually-hidden">Данные Вашего кота.</legend>
         <label class="data-field__title name-title" for="name">ИМЯ:*</label>
-        <input class="data-field__input name-input input" id="name" type="text" name="data" placeholder="БАРСИК"
+        <input class="data-field__input input input--text" id="name" type="text" name="data" placeholder="БАРСИК"
           required>
         <label class="data-field__title weight-title" for="weight">Вес (кг):*</label>
-        <input class="data-field__input weight-input input" id="weight" type="number" name="data" placeholder="7"
+        <input class="data-field__input input input--text" id="weight" type="number" name="data" placeholder="7"
           required>
         <label class="data-field__title age-title" for="age">Возраст (лет):</label>
-        <input class="data-field__input age-input input" id="age" type="number" name="data" placeholder="7">
+        <input class="data-field__input input input--text" id="age" type="number" name="data" placeholder="7">
       </fieldset>
       <fieldset class="program__field target-field field">
         <legend class="visually-hidden">Цель Вашей программы.</legend>
@@ -121,7 +121,7 @@
         </ul>
       </fieldset>
       <button class="program__button button" type="submit">отправить заявку</button>
-      <p class="program__tooltip">* — Обязательные поля</p>
+      <span class="program__tooltip">* — Обязательные поля</span>
     </form>
   </main>
   <footer class="main-footer">
