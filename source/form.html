@@ -18,112 +18,109 @@
       </button>
       <div class="main-nav__container">
         <ul class="main-nav__list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item ">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="main-container container">
-    <h1 class="visually-hidden">Магазин кошачего питания</h1>
-    <section class="about">
-      <div class="about__container">
-        <header class="about__header">
-          <h2 class="about__title">Функциональное
-            питание для котов</h2>
-          <p class="about__description">Занялся собой? Займись котом!</p>
-        </header>
-        <!-- псевдо с картинкой корма -->
-        <button class="about__button button" type="button">подобрать программу</button>
-      </div>
-    </section>
-    <section class="programs">
-      <div class="programs_container">
-        <h2 class="visually-hidden">Выбор программы</h2>
-        <ul class="programs__list">
-          <li class="programs__item">
-            <h3 class="programs__title">похудение</h3>
-            <!-- будет псевдо с картинкой -->
-            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <!-- псевдо с дивидером -->
-            <a class="programs__catalog" href="catalog.html">каталог slim
-              <!-- псевдо со стрелочкой -->
-            </a>
+  <main class="form-container container">
+    <h1 class="form__title">Подбор программы</h1>
+    <form class="program" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="program__description">Заполните анкету, и мы подберем
+        программу питания для вашего кота</h2>
+      <fieldset class="program__field data-field field">
+        <legend class="visually-hidden">Данные Вашего кота.</legend>
+        <label class="data-field__title name-title" for="name">ИМЯ:*
+          <input class="data-field__input name-input input" id="name" type="text" name="data" placeholder="БАРСИК"
+            required>
+          <label class="data-field__title weight-title" for="weight">Вес (кг):*</label>
+          <input class="data-field__input weight-input input" id="weight" type="number" name="data" placeholder="7"
+            required>
+          <label class="data-field__title age-title" for="age">Возраст (лет):</label>
+          <input class="data-field__input age-input input" id="age" type="number" name="data" placeholder="7">
+      </fieldset>
+      <fieldset class="program__field target-field field">
+        <legend class="visually-hidden">Цель Вашей программы.</legend>
+        <ul class="target-field__list">
+          <li class="target-field__item">
+            <label class="target-field__radio radio" for="weightloss">
+              <input class="radio__button" type="radio" name="program" value="похудение" id="wieghtloss" checked>
+              <span class="radio__button-name">похудение</span>
+            </label>
           </li>
-          <li class="programs__item">
-            <h3 class="programs__title">набор массы</h3>
-            <!-- будет псевдо с картинкой -->
-            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
-              Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <!-- псевдо с дивидером -->
-            <a class="programs__catalog" href="catalog.html">каталог pro
-              <!-- псевдо со стрелочкой -->
-            </a>
+          <li class="target-field__item">
+            <label class="target-field__radio radio" for="wieghtrise">
+              <input class="radio__button" type="radio" name="program" value="набор массы" id="wieghtrise">
+              <span class="radio__button-name">Набор массы</span>
+            </label>
           </li>
-        </ul>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="advantages__container">
-        <h2 class="visually-hidden">Преимущества нашего продукта.</h2>
-        <p class="advantages__about">Как это работает</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <!-- псевдо с картинкой -->
-            <p class="advantages__description">Функциональное питание
-              содержит только полезные
-              питательные вещества.</p>
-          </li>
-          <li class="advantages__item">
-            <!-- псевдо с картинкой -->
-            <p class="advantages__description">Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.</p>
-          </li>
-          <li class="advantages__item">
-            <!-- псевдо с картинкой -->
-            <p class="advantages__description">Замените один-два приема
-              обычной еды на наше
-              функциональное питание..</p>
-          </li>
-          <li class="advantages__item">
-            <!-- псевдо с картинкой -->
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <li class="target-field__item">
+            <label class="target-field__radio radio" for="weightloss">
+              <input class="radio__button" type="radio" name="program" value="ПОХУДЕНИЕ" id="wieghtloss">
+              <span class="radio__button-name">Не знаю (Нужен ваш совет)</span>
+            </label>
           </li>
         </ul>
-      </div>
-    </section>
-    <section class="example">
-      <div class="example__container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день. </p>
-        <div class="example__data-container">
-          <!-- псевдо с прямоуглоником -->
-          <dt class="example__number">5 КГ</dt>
-          <dd class="example__text">снижение веса</dd>
-          <!-- псевдо с прямоуглоником -->
-          <dt class="example__number">60 ДНЕЙ</dt>
-          <dd class="example__text">затрачено времени</dd>
-          <p class="example__costs">Затраты на питание: 15 000 РУБ.</p>
-        </div>
-        <button class="example__image-button" type="button">
-          <img class="example__image image__before" src="../image/example-cat-before.jpg" width="280" height="256"
-            alt="Кот, до похудения, толстый.">
-          <img class="example__image image__after" src="../image/example-cat-after.jpg" width="280" height="256"
-            alt="Кот, после похудения, стройный.">
-        </button>
-      </div>
-    </section>
+      </fieldset>
+      <fieldset class="program__field contact-field field">
+        <legend class="contact-field__title field-title">Контактные данные
+          (владельца кота)</legend>
+        <!-- псевдо с зеленой полоской -->
+        <label class="contact-field__title email-title" for="email">E-mail:*</label>
+        <input class="contact-field__input email-input" id="email" type="email" name="owner"
+          placeholder="KUKLACHEV@GMAIL.COM" required>
+        <label class="contact-field__title tel-title" for="tel">Телефон:*</label>
+        <input class="contact-field__input tel-input" id="tel" type="tel" name="owner" placeholder="8 (960) 900-60-90"
+          required>
+      </fieldset>
+      <fieldset class="program__field comment-field field">
+        <legend class="comment-field__title field-title">Комментарий</legend>
+        <!-- псевдо с зеленой полоской -->
+        <label class="comment-field__title" for="comment"></label>
+        <input class="comment-field__input" id="comment" type="text" name="comment"
+          placeholder="Расскажите обо всех повадках кота">
+      </fieldset>
+      <fieldset class="program__field additional-field field">
+        <legend class="additional-field__title">Дополнительно</legend>
+        <!-- псевдо с зеленой полоской -->
+        <ul class="additional-field__list">
+          <li class="additional-field__item">
+            <label class="additional-field__check check" for="sweetener">
+              <input class="check__button" id="sweetener" name="additional" value="сахарозаменитель" type="checkbox" checked>
+              <span class="check__button-name">сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="additional-field__item">
+            <label class="additional-field__check check" for="water">
+              <input class="check__button" id="water" name="additional" value="питьевая вода" type="checkbox">
+              <span class="check__button-name">питьевая вода</span>
+            </label>
+          </li>
+          <li class="additional-field__item">
+            <label class="additional-field__check check" for="milk">
+              <input class="check__button" id="milk" name="additional" value="молоко" type="checkbox">
+              <span class="check__button-name">молоко</span>
+            </label>
+          </li>
+          <li class="additional-field__item">
+            <label class="additional-field__check check" for="vitamins">
+              <input class="check__button" id="vitamins" name="additional" value="витамины" type="checkbox">
+              <span class="check__button-name">витамины</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="program__button button" type="submit">отправить заявку</button>
+      <p class="program__tooltip">* — Обязательные поля</p>
+    </form>
   </main>
   <footer class="main-footer">
     <div class="main-footer__container">
@@ -191,5 +188,3 @@
     </div>
   </footer>
 </body>
-
-</html>
