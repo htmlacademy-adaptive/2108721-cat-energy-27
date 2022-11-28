@@ -16,7 +16,7 @@ _`.github`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `pa
 
 ---
 
-### Памятка
+### Памяткаg
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
