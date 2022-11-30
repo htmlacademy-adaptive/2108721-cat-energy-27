@@ -1,0 +1,19 @@
+.main-header {
+  background-color: #000000;
+}
+
+.logo {
+  margin-right: 100px;
+
+  &:hover {
+    background-color: #ffff00;image.png
+  }
+
+  &--dark {
+    background-color: #000000;
+  }
+}
+
+.main-nav {
+  width: 100%;
+}
