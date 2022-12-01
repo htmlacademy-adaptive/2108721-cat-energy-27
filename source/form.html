@@ -4,29 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="../source/sass/style.scss">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="header">
     <a class="logo" href="index.html">
-      <img src="../image/logo-cat.svg" width="34" height="38" alt="Кот в маске Бэтмена показывает язык.">
-      <img src="../image/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
+      <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
+        alt="Кот в маске Бэтмена показывает язык.">
+      <img class="logo__image" src="./img/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+    <nav class="nav ">
+      <button class="nav__button" type="button">
+        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="открыть меню сайта.">
+          <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+        </svg>
       </button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list">
-          <li class="main-nav__item ">
-            <a class="main-nav__link" href="index.html">Главная</a>
+      <div class="nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link " href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="#">Подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -34,10 +38,10 @@
   </header>
   <main class="form-container container">
     <h1 class="form__title">Подбор программы</h1>
-    <form class="program" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="program__description">Заполните анкету, и мы подберем
+    <form class="selection" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="selection__description">Заполните анкету, и мы подберем
         программу питания для вашего кота</h2>
-      <fieldset class="program__field data-field field">
+      <fieldset class="selection__field data-field field">
         <legend class="visually-hidden">Данные Вашего кота.</legend>
         <label class="data-field__title name-title" for="name">ИМЯ:*</label>
         <input class="data-field__input input input--text" id="name" type="text" name="data" placeholder="БАРСИК"
@@ -48,30 +52,30 @@
         <label class="data-field__title age-title" for="age">Возраст (лет):</label>
         <input class="data-field__input input input--text" id="age" type="number" name="data" placeholder="7">
       </fieldset>
-      <fieldset class="program__field target-field field">
+      <fieldset class="selection__field target-field field">
         <legend class="visually-hidden">Цель Вашей программы.</legend>
         <ul class="target-field__list">
           <li class="target-field__item">
             <label class="target-field__radio radio" for="weightloss">
-              <input class="radio__button" type="radio" name="program" value="похудение" id="weightloss" checked>
+              <input class="radio__button" type="radio" name="selection" value="похудение" id="weightloss" checked>
               <span class="radio__button-name">похудение</span>
             </label>
           </li>
           <li class="target-field__item">
             <label class="target-field__radio radio" for="wieghtrise">
-              <input class="radio__button" type="radio" name="program" value="набор массы" id="wieghtrise">
+              <input class="radio__button" type="radio" name="selection" value="набор массы" id="wieghtrise">
               <span class="radio__button-name">Набор массы</span>
             </label>
           </li>
           <li class="target-field__item">
             <label class="target-field__radio radio" for="advice">
-              <input class="radio__button" type="radio" name="program" value="ПОХУДЕНИЕ" id="advice">
+              <input class="radio__button" type="radio" name="selection" value="ПОХУДЕНИЕ" id="advice">
               <span class="radio__button-name">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="program__field contact-field field">
+      <fieldset class="selection__field contact-field field">
         <legend class="contact-field__title field-title">Контактные данные
           (владельца кота)</legend>
         <!-- псевдо с зеленой полоской -->
@@ -82,14 +86,14 @@
         <input class="contact-field__input tel-input" id="tel" type="tel" name="owner" placeholder="8 (960) 900-60-90"
           required>
       </fieldset>
-      <fieldset class="program__field comment-field field">
+      <fieldset class="selection__field comment-field field">
         <legend class="comment-field__title field-title">Комментарий</legend>
         <!-- псевдо с зеленой полоской -->
         <label class="comment-field__title" for="comment"></label>
         <input class="comment-field__input" id="comment" type="text" name="comment"
           placeholder="Расскажите обо всех повадках кота">
       </fieldset>
-      <fieldset class="program__field additional-field field">
+      <fieldset class="selection__field additional-field field">
         <legend class="additional-field__title">Дополнительно</legend>
         <!-- псевдо с зеленой полоской -->
         <ul class="additional-field__list">
@@ -120,13 +124,13 @@
           </li>
         </ul>
       </fieldset>
-      <button class="program__button button" type="submit">отправить заявку</button>
-      <span class="program__tooltip">* — Обязательные поля</span>
+      <button class="selection__button button" type="submit">отправить заявку</button>
+      <span class="selection__tooltip">* — Обязательные поля</span>
     </form>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__container">
-      <div class="main-footer__contacts contacts">
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__contacts contacts">
         <h2 class="visually-hidden">Наши контактные данные.</h2>
         <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__adress">ул. Большая
@@ -137,10 +141,10 @@
           width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           title="Офис производителя питания для котов Cat Energy."></iframe>
       </div>
-      <div class="main-footer__social social">
-        <div class="main-footer__logo">
+      <div class="footer__social social">
+        <div class="footer__logo">
           <a class="logo" href="#">
-            <img src="../image/footer-logo.svg" width="128" height="24" alt="CAT ENERGY.">
+            <img src="./img/logo-text.svg" width="128" height="24" alt="CAT ENERGY.">
           </a>
         </div>
         <ul class="social__list">
@@ -176,7 +180,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none"

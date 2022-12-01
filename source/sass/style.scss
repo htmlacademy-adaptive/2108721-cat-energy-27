@@ -1,3 +1,46 @@
-body {
-  background-color: #ff6347;
+@use "./blocks/about.scss";
+@use "./blocks/additional-field.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/age-title.scss";
+@use "./blocks/button.scss";
+@use "./blocks/catalog-container.scss";
+@use "./blocks/check.scss";
+@use "./blocks/comment-field.scss";
+@use "./blocks/contact-field.scss";
+@use "./blocks/container.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/data-field.scss";
+@use "./blocks/email-input.scss";
+@use "./blocks/email-title.scss";
+@use "./blocks/example.scss";
+@use "./blocks/field-title.scss";
+@use "./blocks/field.scss";
+@use "./blocks/form-container.scss";
+@use "./blocks/input.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/header.scss";
+@use "./blocks/nav.scss";
+@use "./blocks/name-title.scss";
+@use "./blocks/products.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/radio.scss";
+@use "./blocks/selection.scss";
+@use "./blocks/show-more.scss";
+@use "./blocks/supplies.scss";
+@use "./blocks/target-field.scss";
+@use "./blocks/tel-input.scss";
+@use "./blocks/tel-title.scss";
+@use "./blocks/visaully-hidden.scss";
+@use "./blocks/weight-title.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/social.scss";
+@use "./common/mixins.scss";
+@use "./common/fonts.scss";
+@use "./common/variables.scss";
+
+.page__body {
+  width: 320px;
+  margin: 0 auto;
 }
