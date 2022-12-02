@@ -26,16 +26,27 @@
 }
 
 .example__data-container {
-  display: flex;
-  gap: 95px;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
   margin: 0;
+  max-width: 280px;
+  column-gap: 32px;
+  row-gap: 32px;
 }
 
 .example__block-container {
   position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 9px;
+
+  &:last-child {
+    grid-column: 2/3;
+  }
 
   &::before {
     position: absolute;
@@ -43,6 +54,7 @@
     background-image: url("../../img/example-rectangle.svg");
     width: 124px;
     height: 56px;
+    top: -15px;
   }
 }
 
@@ -69,4 +81,8 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+}
+
+.example__container-before {
+  display: flex;
 }

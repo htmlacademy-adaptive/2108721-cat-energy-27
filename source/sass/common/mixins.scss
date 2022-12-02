@@ -5,6 +5,48 @@
   height: 1px;
   background-color: #d9d9d9;
   bottom: 0;
-  left: 5px;
+  left: -70px;
 }
 
+@mixin programs-arrow {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 32px;
+  top: 12px;
+  left: 112px;
+}
+
+@mixin advantages-picture {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+@mixin programs-picture-background {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  border-radius: 50%;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  top: 12px;
+  left: 20px;
+}
+
+@mixin programs-picture-image {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 12px;
+  left: 20px;
+}

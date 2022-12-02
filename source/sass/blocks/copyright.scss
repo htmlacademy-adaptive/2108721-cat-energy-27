@@ -1,0 +1,36 @@
+.copyright {
+  width: 100%;
+}
+
+.copyright__link {
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover .copyright__logo {
+    color: #68b738;
+  }
+
+  &:active .copyright__logo {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.copyright__text {
+  display: flex;
+  margin: 0;
+  font-family: $font-low;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.copyright__logo {
+  color: #666666;
+}

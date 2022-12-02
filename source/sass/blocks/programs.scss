@@ -12,10 +12,29 @@
 }
 
 .programs__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   padding: 20px 33px 22px 19px;
+
+  &::before {
+    @include programs-picture-background();
+  }
+
+  &:nth-child(1)::after {
+    @include programs-picture-image;
+    background-image: url("../../img/programs-cat.svg");
+    width: 37px;
+    height: 50px;
+  }
+
+  &:nth-child(2)::after {
+    @include programs-picture-image;
+    background-image: url("../../img/programs-cugar.svg");
+    width: 68px;
+    height: 29px;
+  }
 }
 
 .programs__title {
@@ -60,12 +79,26 @@
   padding: 5px 51px 5px 5px;
 
   &::after {
-    position: absolute;
-    content: "";
+    @include programs-arrow;
     background-image: url("../../img/programs-link-arrow.svg");
-    width: 32px;
-    height: 10px;
-    top: 12px;
-    left: 112px;
+  }
+
+  &:hover::after {
+    @include programs-arrow;
+    background-image: url("../../img/programs-link-arrow-large.svg");
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &:active::after {
+    @include programs-arrow;
+    background-image: url("../../img/programs-link-arrow-large.svg");
+  }
+
+  &:focus {
+    outline: 2px solid #68b738;
+    outline-offset: 5px;
   }
 }
