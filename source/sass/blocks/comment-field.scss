@@ -1,0 +1,28 @@
+.comment-field {
+  @include font-form;
+  align-items: center;
+  padding: 12px 20px 12px;
+}
+
+.comment-field__title {
+  position: relative;
+  padding: 12px 0 38px;
+
+  &::after {
+    @include title-line;
+    width: 158px;
+    top: 24px;
+    right: -179px;
+  }
+}
+
+.input--comment {
+  position: relative;
+  min-height: 150px;
+  padding: 0 15px;
+
+  &::placeholder {
+    position: absolute;
+    text-transform: uppercase;
+  }
+}

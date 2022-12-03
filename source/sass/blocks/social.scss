@@ -11,7 +11,8 @@
   padding: 39px 0 32px;
 
   &::after {
-    @include social-divider;
+    @include small-divider;
+    left: -70px;
   }
 }
 
@@ -36,7 +37,8 @@
   gap: 20px;
 
   &::after {
-    @include social-divider;
+    @include small-divider;
+    left: -70px;
   }
 }
 

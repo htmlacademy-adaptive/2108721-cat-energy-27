@@ -8,7 +8,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header--divider">
     <a class="logo" href="index.html">
       <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
         alt="Кот в маске Бэтмена показывает язык.">
@@ -36,96 +36,100 @@
       </div>
     </nav>
   </header>
-  <main class="form-container container">
+  <main class="form">
     <h1 class="form__title">Подбор программы</h1>
     <form class="selection" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="selection__description">Заполните анкету, и мы подберем
+      <h2 class="selection__description">Заполните анкету, и мы подберем</br>
         программу питания для вашего кота</h2>
-      <fieldset class="selection__field data-field field">
+      <fieldset class="selection__field data-field">
         <legend class="visually-hidden">Данные Вашего кота.</legend>
         <label class="data-field__title name-title" for="name">ИМЯ:*</label>
-        <input class="data-field__input input input--text" id="name" type="text" name="data" placeholder="БАРСИК"
-          required>
+        <input class="data-field__input input" id="name" type="text" name="data" placeholder="БАРСИК" required>
         <label class="data-field__title weight-title" for="weight">Вес (кг):*</label>
-        <input class="data-field__input input input--text" id="weight" type="number" name="data" placeholder="7"
-          required>
+        <input class="data-field__input input" id="weight" type="number" name="data" placeholder="7" required>
         <label class="data-field__title age-title" for="age">Возраст (лет):</label>
-        <input class="data-field__input input input--text" id="age" type="number" name="data" placeholder="7">
+        <input class="data-field__input input input--age" id="age" type="number" name="data" placeholder="7">
       </fieldset>
-      <fieldset class="selection__field target-field field">
+      <fieldset class="selection__field target-field">
         <legend class="visually-hidden">Цель Вашей программы.</legend>
         <ul class="target-field__list">
           <li class="target-field__item">
             <label class="target-field__radio radio" for="weightloss">
-              <input class="radio__button" type="radio" name="selection" value="похудение" id="weightloss" checked>
-              <span class="radio__button-name">похудение</span>
+              <input class="visually-hidden" type="radio" name="selection" value="похудение" id="weightloss" checked>
+              <span class="radio__sort" tabindex="0"></span>
+              <span class="radio__name">похудение</span>
             </label>
           </li>
           <li class="target-field__item">
             <label class="target-field__radio radio" for="wieghtrise">
-              <input class="radio__button" type="radio" name="selection" value="набор массы" id="wieghtrise">
-              <span class="radio__button-name">Набор массы</span>
+              <input class="visually-hidden" type="radio" name="selection" value="набор массы" id="wieghtrise">
+              <span class="radio__sort" tabindex="0"></span>
+              <span class="radio__name">Набор массы</span>
             </label>
           </li>
           <li class="target-field__item">
             <label class="target-field__radio radio" for="advice">
-              <input class="radio__button" type="radio" name="selection" value="ПОХУДЕНИЕ" id="advice">
-              <span class="radio__button-name">Не знаю (Нужен ваш совет)</span>
+              <input class="visually-hidden" type="radio" name="selection" value="ПОХУДЕНИЕ" id="advice">
+              <span class="radio__sort" tabindex="0"></span>
+              <span class="radio__name">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="selection__field contact-field field">
+      <fieldset class="selection__field contact-field">
         <legend class="contact-field__title field-title">Контактные данные
           (владельца кота)</legend>
-        <!-- псевдо с зеленой полоской -->
-        <label class="contact-field__title email-title" for="email">E-mail:*</label>
-        <input class="contact-field__input email-input" id="email" type="email" name="owner"
+        <label class="contact-field__name email-title" for="email">E-mail:*</label>
+        <input class="contact-field__input input input--email" id="email" type="email" name="owner"
           placeholder="KUKLACHEV@GMAIL.COM" required>
-        <label class="contact-field__title tel-title" for="tel">Телефон:*</label>
-        <input class="contact-field__input tel-input" id="tel" type="tel" name="owner" placeholder="8 (960) 900-60-90"
-          required>
+        <label class="contact-field__name tel-title" for="tel">Телефон:*</label>
+        <input class="contact-field__input input input--tel" id="tel" type="tel" name="owner"
+          placeholder="8 (960) 900-60-90" required>
       </fieldset>
-      <fieldset class="selection__field comment-field field">
+      <fieldset class="selection__field comment-field">
         <legend class="comment-field__title field-title">Комментарий</legend>
-        <!-- псевдо с зеленой полоской -->
-        <label class="comment-field__title" for="comment"></label>
-        <input class="comment-field__input" id="comment" type="text" name="comment"
+        <label class="comment-field__name" for="comment"></label>
+        <input class="comment-field__input input input--comment" id="comment" type="text" name="comment"
           placeholder="Расскажите обо всех повадках кота">
       </fieldset>
-      <fieldset class="selection__field additional-field field">
-        <legend class="additional-field__title">Дополнительно</legend>
-        <!-- псевдо с зеленой полоской -->
+      <fieldset class="selection__field additional-field">
+        <legend class="additional-field__title field-title">Дополнительно</legend>
         <ul class="additional-field__list">
           <li class="additional-field__item">
             <label class="additional-field__check check" for="sweetener">
-              <input class="check__button" id="sweetener" name="additional" value="сахарозаменитель" type="checkbox"
+              <input class="visually-hidden" id="sweetener" name="additional" value="сахарозаменитель" type="checkbox"
                 checked>
-              <span class="check__button-name">сахарозаменитель</span>
+              <span class="check__sort" tabindex="0"></span>
+              <span class="check__name">сахарозаменитель</span>
             </label>
           </li>
           <li class="additional-field__item">
             <label class="additional-field__check check" for="water">
-              <input class="check__button" id="water" name="additional" value="питьевая вода" type="checkbox">
-              <span class="check__button-name">питьевая вода</span>
+              <input class="visually-hidden" id="water" name="additional" value="питьевая вода" type="checkbox">
+              <span class="check__sort" tabindex="0"></span>
+              <span class="check__name">питьевая вода</span>
             </label>
           </li>
           <li class="additional-field__item">
             <label class="additional-field__check check" for="milk">
-              <input class="check__button" id="milk" name="additional" value="молоко" type="checkbox">
-              <span class="check__button-name">молоко</span>
+              <input class="visually-hidden" id="milk" name="additional" value="молоко" type="checkbox">
+              <span class="check__sort" tabindex="0"></span>
+              <span class="check__name">молоко</span>
             </label>
           </li>
           <li class="additional-field__item">
             <label class="additional-field__check check" for="vitamins">
-              <input class="check__button" id="vitamins" name="additional" value="витамины" type="checkbox">
-              <span class="check__button-name">витамины</span>
+              <input class="visually-hidden" id="vitamins" name="additional" value="витамины" type="checkbox">
+              <span class="check__sort" tabindex="0"></span>
+              <span class="check__name">витамины</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="selection__button button" type="submit">отправить заявку</button>
-      <span class="selection__tooltip">* — Обязательные поля</span>
+      <div class="selection__bottom">
+        <button class="selection__button button button--position" type="submit">отправить заявку</button>
+        <span class="selection__tooltip">* — Обязательные поля</span>
+      </div>
     </form>
   </main>
   <footer class="footer">

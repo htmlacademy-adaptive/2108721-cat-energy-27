@@ -1,0 +1,50 @@
+.more {
+  position: relative;
+  padding: 0 20px 25px;
+  text-align: center;
+}
+
+.more__text {
+  font-family: $font-large;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 8px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/catalog/more-plus.svg");
+    width: 30px;
+    height: 30px;
+    top: -53px;
+    left: 140px;
+  }
+}
+
+.more__description {
+  margin: 0;
+  font-family: $font-low;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 21px;
+}
+
+.more__button {
+  @include buttons;
+  background-color: #f2f2f2;
+  color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgb(68, 68, 68, 0.3);
+  }
+
+  &::after {
+    @include large-divider;
+  }
+}

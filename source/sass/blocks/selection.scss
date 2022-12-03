@@ -1,0 +1,35 @@
+.selection__description {
+  margin: 0;
+  padding: 37px 20px 20px;
+  font-family: $font-large;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.selection__field {
+  position: relative;
+  border: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.selection__bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 6px;
+  align-items: center;
+}
+
+.selection__button {
+  width: 280px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.selection__tooltip {
+  padding: 21px 0 0;
+}

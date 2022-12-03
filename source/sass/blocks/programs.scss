@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 20px 33px 22px 19px;
+  padding: 30px 33px 22px 19px;
 
   &::before {
     @include programs-picture-background();
@@ -27,6 +27,8 @@
     background-image: url("../../img/programs-cat.svg");
     width: 37px;
     height: 50px;
+    top: 19px;
+    left: 27px;
   }
 
   &:nth-child(2)::after {
@@ -34,6 +36,8 @@
     background-image: url("../../img/programs-cugar.svg");
     width: 68px;
     height: 29px;
+    top: 33px;
+    left: 11px;
   }
 }
 

@@ -1,6 +1,12 @@
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 9px 20px;
+}
+
+.header--divider::after {
+  @include large-divider();
+  background-color: #d9d9d9;
 }

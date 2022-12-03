@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 316px;
 }
 
 .example__container {
@@ -83,6 +83,19 @@
   margin: 0;
 }
 
-.example__container-before {
+.example__image-container {
+  position: relative;
   display: flex;
+}
+
+.example__image-block {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.example__image-before,
+.example__image-after {
+  overflow: hidden;
 }

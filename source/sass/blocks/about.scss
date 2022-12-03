@@ -53,24 +53,8 @@
 }
 
 .about__link {
-  color: #ffffff;
-  background-color: #68b738;
   text-decoration: none;
-  padding: 10px 44px;
-  font-size: 14px;
   text-transform: uppercase;
-  margin: 0 20px;
-
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active {
-    background-color: #5eaa2f;
-    color: rgba($color: #ffffff, $alpha: 30%);
-  }
-
-  &:focus {
-    outline: 2px solid #f06351;
-  }
+  align-self: center;
+  padding: 11px 74px;
 }

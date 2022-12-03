@@ -1,0 +1,23 @@
+.button {
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-family: $font-large;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba($color: #ffffff, $alpha: 30%);
+  }
+
+  &:focus {
+    outline: 2px solid #f06351;
+  }
+}

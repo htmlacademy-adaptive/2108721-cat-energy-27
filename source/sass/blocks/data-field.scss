@@ -1,0 +1,12 @@
+.data-field {
+  padding: 19px 20px 24px;
+  gap: 14px;
+
+  &::after {
+    @include large-divider;
+  }
+}
+
+.data-field__title {
+  @include font-form;
+}

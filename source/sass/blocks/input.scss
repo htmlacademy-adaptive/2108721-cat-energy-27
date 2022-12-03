@@ -1,0 +1,58 @@
+/* Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  @include font-form;
+  @include input-number;
+  display: flex;
+  padding: 13px 20px;
+  border: 1px solid #e7e7e7;
+  flex-grow: 1;
+  min-width: 100px;
+
+  &::placeholder {
+    color: #444444;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+    border-radius: 0;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: #ff8282;
+  }
+}
+
+.input--age {
+  width: 10px;
+}
+
+.input--email {
+  background-image: url("../../img/form/email-filed-image.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px top 16px;
+}
+
+.input--tel {
+  background-image: url("../../img/form/tel-field-image.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px top 15px;
+}
