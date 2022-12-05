@@ -1,6 +1,6 @@
-.selection__description {
+.selection__title {
   margin: 0;
-  padding: 37px 20px 20px;
+  padding: 37px 0 20px;
   font-family: $font-large;
   font-size: 14px;
   line-height: 18px;
@@ -19,7 +19,7 @@
 .selection__bottom {
   display: flex;
   flex-direction: column;
-  padding: 16px 20px 6px;
+  padding: 16px 0 32px;
   align-items: center;
 }
 

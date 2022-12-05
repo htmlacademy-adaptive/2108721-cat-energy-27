@@ -11,11 +11,11 @@
 @mixin large-divider {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 320px;
   height: 1px;
   background-color: #ebebeb;
   bottom: 0;
-  left: 0;
+  left: -20px;
 }
 
 @mixin programs-arrow {
@@ -86,4 +86,17 @@
   content: "";
   height: 2px;
   background-color: #68b738;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

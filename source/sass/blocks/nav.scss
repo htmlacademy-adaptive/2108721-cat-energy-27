@@ -8,10 +8,6 @@
   cursor: pointer;
   padding: 5px;
 
-  &:focus-within + .nav__container .nav__list {
-    display: flex;
-  }
-
   &:hover {
     background-color: #ebebeb;
   }
@@ -27,8 +23,8 @@
 
 .nav__container {
   position: absolute;
-  bottom: -221px;
-  right: -20px;
+  bottom: -224px;
+  right: 0;
 }
 
 .nav__list {
@@ -46,16 +42,20 @@
   position: relative;
   justify-content: center;
   text-align: center;
-  border: 1px solid #e6e6e6;
-  border-left: none;
-  border-right: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
   margin: 0;
   background-color: #ffffff;
   height: 66px;
   width: 320px;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .nav__link {
+  position: relative;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -90,3 +90,35 @@
     outline-offset: 2px;
   }
 }
+
+// @media (min-width: $tablet-width) {
+//   .nav__container {
+//     position: static;
+//   }
+
+//   .nav__list {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     width: 440px;
+//     gap: 35px;
+//   }
+
+//   .nav__item {
+//     width: auto;
+//     height: auto;
+//     border: none;
+
+//     &:first-child {
+//       border: none;
+//     }
+//   }
+
+//   .nav__link {
+//     font-size: 18px;
+//     line-height: 24px;
+//   }
+
+//   .nav__button {
+//     display: none;
+//   }
+// }

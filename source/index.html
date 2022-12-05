@@ -3,60 +3,62 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="logo" href="index.html">
-      <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
-        alt="Кот в маске Бэтмена показывает язык.">
-      <img class="logo__image" src="./img/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
-    </a>
-    <nav class="nav">
-      <button class="nav__button" type="button">
-        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-          aria-label="открыть меню сайта.">
-          <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
-        </svg>
-      </button>
-      <div class="nav__container">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--current" href="#">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="header__container container">
+      <a class="logo" href="index.html">
+        <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
+          alt="Кот в маске Бэтмена показывает язык.">
+        <img class="logo__image" src="./img/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
+      </a>
+      <nav class="nav">
+        <button class="nav__button" type="button">
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="открыть меню сайта.">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
+          </svg>
+        </button>
+        <div class="nav__container container">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main class="container">
+  <main class="main">
     <h1 class="visually-hidden">Магазин кошачего питания</h1>
     <section class="about">
-      <div class="about__container">
-        <div class="about__image-container">
-          <h2 class="about__title">Функциональное
-            питание для котов</h2>
-          <p class="about__description">Занялся собой? Займись котом!</p>
-        </div>
-        <img class="about__image" src="./img/about-image.png" width="280" height="270"
+      <div class="about__image-container container">
+        <h2 class="about__title">Функциональное
+          питание для котов</h2>
+        <p class="about__description">Занялся собой? Займись котом!</p>
+        <img class="about__image" src="./img/index/about-image.png" width="280" height="270"
           alt="Банка кошачьего корма CAT ENERGY со вкусом курицы, 500г.">
-        <a class="about__link button" href="form.html">подобрать программу</a>
       </div>
     </section>
     <section class="programs">
-      <div class="programs__container">
+      <div class="programs__container container">
         <h2 class="visually-hidden">Выбор программы</h2>
+        <a class="programs__choose button" href="form.html">подобрать программу</a>
         <ul class="programs__list">
           <li class="programs__item">
             <h3 class="programs__title">похудение</h3>
-            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <div class="programs__link-container">
               <a class="programs__link" href="catalog.html">каталог slim</a>
@@ -74,7 +76,7 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__container">
+      <div class="advantages__container container">
         <h2 class="visually-hidden">Преимущества нашего продукта.</h2>
         <p class="advantages__about">Как это работает</p>
         <ul class="advantages__list">
@@ -100,10 +102,11 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__container">
+      <div class="example__container container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+          по
           16 часов в день. </p>
         <dl class="example__data-container">
           <div class="example__block-container">
@@ -118,33 +121,33 @@
         <p class="example__costs">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__image-container">
           <div class="example__image-block">
-            <img class="example__image-before" src="./img/example-cat-before.jpg" width="280" height="256"
+            <img class="example__image-before" src="./img/index/example-cat-before.jpg" width="280" height="256"
               alt="Кот, до похудения, толстый.">
           </div>
           <div class="example__image-block">
-            <img class="example__image-after" src="./img/example-cat-after.jpg" width="280" height="256"
+            <img class="example__image-after" src="./img/index/example-cat-after.jpg" width="280" height="256"
               alt="Кот, после похудения, стройный.">
           </div>
           <button class="example__image-button" type="button"></button>
         </div>
       </div>
     </section>
+    <section class="contacts">
+      <div class="contacts__container container">
+        <h2 class="visually-hidden">Наши контактные данные.</h2>
+        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__adress">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
+        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Офис производителя питания для котов Cat Energy."></iframe>
+    </section>
   </main>
   <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__contacts contacts">
-        <div class="contacts__container">
-          <h2 class="visually-hidden">Наши контактные данные.</h2>
-          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
-        </div>
-        <iframe class="contacts__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
-          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Офис производителя питания для котов Cat Energy."></iframe>
-      </div>
+    <div class="footer__container container">
       <div class="social">
         <div class="social__logo">
           <a class="logo logo--footer" href="#">

@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 316px;
+  padding: 25px 0 316px;
 }
 
 .example__container {
@@ -51,7 +51,7 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../../img/example-rectangle.svg");
+    background-image: url("../../img/index/example-rectangle.svg");
     width: 124px;
     height: 56px;
     top: -15px;
@@ -86,6 +86,7 @@
 .example__image-container {
   position: relative;
   display: flex;
+  background-color: inherit;
 }
 
 .example__image-block {

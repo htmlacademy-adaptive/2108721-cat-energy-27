@@ -1,13 +1,12 @@
-$font-large: "Oswald", sans-serif;
-
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 26px 0 388px;
 }
 
 .contacts__container {
   display: flex;
-  padding: 26px 20px;
   justify-content: left;
   gap: 2px;
 
@@ -32,5 +31,8 @@ $font-large: "Oswald", sans-serif;
 }
 
 .contacts__map {
+  position: absolute;
   border: none;
+  top: 112px;
+  left: 0;
 }

@@ -1,12 +1,39 @@
 .header {
   position: relative;
+  padding: 10px 0 18px;
+}
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 20px;
 }
 
 .header--divider::after {
   @include large-divider();
   background-color: #d9d9d9;
+  left: 0;
 }
+
+// @media (min-width: $tablet-width) {
+//   .header {
+//     gap: 94px;
+//   }
+
+//   .logo {
+//     // прописать адрес к другому логотипу
+//     width: 174px;
+//     height: 52px;
+//   }
+
+//   .logo__image {
+//     display: none;
+//   }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .header {
+//     display: grid;
+//     grid-template-columns: repeat(2, 720px);
+//   }
+// }

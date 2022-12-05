@@ -1,5 +1,13 @@
-.programs {
-  padding: 20px;
+.programs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programs__choose {
+  width: 100%;
+  padding: 7px 0;
+  text-align: center;
 }
 
 .programs__list {
@@ -24,7 +32,7 @@
 
   &:nth-child(1)::after {
     @include programs-picture-image;
-    background-image: url("../../img/programs-cat.svg");
+    background-image: url("../../img/index/programs-cat.svg");
     width: 37px;
     height: 50px;
     top: 19px;
@@ -33,7 +41,7 @@
 
   &:nth-child(2)::after {
     @include programs-picture-image;
-    background-image: url("../../img/programs-cugar.svg");
+    background-image: url("../../img/index/programs-cugar.svg");
     width: 68px;
     height: 29px;
     top: 33px;
@@ -84,12 +92,12 @@
 
   &::after {
     @include programs-arrow;
-    background-image: url("../../img/programs-link-arrow.svg");
+    background-image: url("../../img/index/programs-link-arrow.svg");
   }
 
   &:hover::after {
     @include programs-arrow;
-    background-image: url("../../img/programs-link-arrow-large.svg");
+    background-image: url("../../img/index/programs-link-arrow-large.svg");
   }
 
   &:active {

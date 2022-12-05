@@ -1,5 +1,5 @@
 .advantages {
-  padding: 0 20px 49px;
+  padding: 20px 0 49px;
 }
 
 .advantages__about {
@@ -15,6 +15,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  padding-bottom: 6px;
   list-style-type: none;
   gap: 20px;
 }
@@ -24,22 +25,22 @@
 
   &:nth-child(1)::before {
     @include advantages-picture();
-    background-image: url("../../img/advantages-leaf.svg");
+    background-image: url("../../img/index/advantages-leaf.svg");
   }
 
   &:nth-child(2)::before {
     @include advantages-picture();
-    background-image: url("../../img/advantages-liquid.svg");
+    background-image: url("../../img/index/advantages-liquid.svg");
   }
 
   &:nth-child(3)::before {
     @include advantages-picture();
-    background-image: url("../../img/advantages-fork.svg");
+    background-image: url("../../img/index/advantages-fork.svg");
   }
 
   &:nth-child(4)::before {
     @include advantages-picture();
-    background-image: url("../../img/advantages-alarm.svg");
+    background-image: url("../../img/index/advantages-alarm.svg");
   }
 }
 
