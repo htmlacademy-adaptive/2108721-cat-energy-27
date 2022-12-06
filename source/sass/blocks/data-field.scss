@@ -11,3 +11,7 @@
 .data-field__title {
   @include font-form;
 }
+
+.data-field__head-title {
+  @include visually-hidden;
+}

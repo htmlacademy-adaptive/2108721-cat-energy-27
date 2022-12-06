@@ -24,12 +24,12 @@
 .nav__container {
   position: absolute;
   bottom: -224px;
-  right: 0;
+  right: -20px;
 }
 
 .nav__list {
   position: relative;
-  display: none;
+  display: block;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -91,34 +91,35 @@
   }
 }
 
-// @media (min-width: $tablet-width) {
-//   .nav__container {
-//     position: static;
-//   }
+@media (min-width: $tablet-width) {
+  .nav__container {
+    position: static;
+  }
 
-//   .nav__list {
-//     flex-direction: row;
-//     justify-content: space-between;
-//     width: 440px;
-//     gap: 35px;
-//   }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+  }
 
-//   .nav__item {
-//     width: auto;
-//     height: auto;
-//     border: none;
+  .nav__item {
+    width: auto;
+    height: auto;
+    border: none;
 
-//     &:first-child {
-//       border: none;
-//     }
-//   }
+    &:first-child {
+      border: none;
+    }
+  }
 
-//   .nav__link {
-//     font-size: 18px;
-//     line-height: 24px;
-//   }
+  .nav__link {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-//   .nav__button {
-//     display: none;
-//   }
-// }
+  .nav__button {
+    display: none;
+  }
+}
+

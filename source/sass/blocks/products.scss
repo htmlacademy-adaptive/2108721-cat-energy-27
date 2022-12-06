@@ -1,3 +1,7 @@
+.products__head-title {
+  @include visually-hidden;
+}
+
 .products__list {
   margin: 0;
   padding: 0;

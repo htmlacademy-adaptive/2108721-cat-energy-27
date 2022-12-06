@@ -1,3 +1,7 @@
+.programs__head-title {
+  @include visually-hidden;
+}
+
 .programs__container {
   display: flex;
   flex-direction: column;

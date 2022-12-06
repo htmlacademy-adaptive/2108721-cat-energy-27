@@ -5,12 +5,15 @@
 }
 
 .social__logo {
+  display: flex;
+  justify-content: center;
   position: relative;
   padding: 39px 0 32px;
+  width: 100%;
 
   &::after {
     @include small-divider;
-    left: -70px;
+    left: 0;
   }
 }
 
@@ -27,16 +30,18 @@
 .social__list {
   position: relative;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 0;
   padding: 18px 0;
   list-style-type: none;
   gap: 20px;
+  width: 100%;
 
   &::after {
     @include small-divider;
-    left: -70px;
+    left: 0;
   }
 }
 

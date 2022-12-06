@@ -2,6 +2,10 @@
   padding: 20px 0 49px;
 }
 
+.advantages__title {
+  @include visually-hidden;
+}
+
 .advantages__about {
   margin: 0;
   font-family: "Oswald", sans-serif;
@@ -22,6 +26,7 @@
 
 .advantages__item {
   position: relative;
+  min-height: 60px;
 
   &:nth-child(1)::before {
     @include advantages-picture();

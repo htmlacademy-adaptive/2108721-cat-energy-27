@@ -20,6 +20,10 @@
   color: #000000;
 }
 
+.target-field__input {
+  @include visually-hidden;
+}
+
 .radio__sort {
   position: absolute;
   width: 28px;
