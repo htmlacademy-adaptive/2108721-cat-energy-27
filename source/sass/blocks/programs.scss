@@ -1,0 +1,120 @@
+.programs__head-title {
+  @include visually-hidden;
+}
+
+.programs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programs__choose {
+  width: 100%;
+  padding: 7px 0;
+  text-align: center;
+}
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.programs__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 30px 33px 22px 19px;
+
+  &::before {
+    @include programs-picture-background();
+  }
+
+  &:nth-child(1)::after {
+    @include programs-picture-image;
+    background-image: url("../../img/index/programs-cat.svg");
+    width: 37px;
+    height: 50px;
+    top: 19px;
+    left: 27px;
+  }
+
+  &:nth-child(2)::after {
+    @include programs-picture-image;
+    background-image: url("../../img/index/programs-cugar.svg");
+    width: 68px;
+    height: 29px;
+    top: 33px;
+    left: 11px;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding-left: 72px;
+  margin-bottom: 29px;
+}
+
+.programs__description {
+  position: relative;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 42px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 1px;
+    background-color: #d9d9d9;
+    bottom: -23px;
+    left: 0;
+  }
+}
+
+.programs__link {
+  display: inline;
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 5px 51px 5px 5px;
+
+  &::after {
+    @include programs-arrow;
+    background-image: url("../../img/index/programs-link-arrow.svg");
+  }
+
+  &:hover::after {
+    @include programs-arrow;
+    background-image: url("../../img/index/programs-link-arrow-large.svg");
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  &:active::after {
+    @include programs-arrow;
+    background-image: url("../../img/programs-link-arrow-large.svg");
+  }
+
+  &:focus {
+    outline: 2px solid #68b738;
+    outline-offset: 5px;
+  }
+}

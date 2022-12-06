@@ -1,0 +1,16 @@
+.check {
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+
+  & input[type="checkbox"]:checked + .check__sort::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    background-image: url("../../img/form/check-sort-image.svg");
+    background-repeat: no-repeat;
+    top: 6px;
+    left: 6px;
+  }
+}

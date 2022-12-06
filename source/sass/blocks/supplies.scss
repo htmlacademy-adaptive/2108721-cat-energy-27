@@ -1,0 +1,119 @@
+.supplies__title {
+  position: relative;
+  padding: 25px 53px 36px 0;
+  margin: 0;
+  font-family: $font-large;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::before {
+    @include title-line;
+    width: 53px;
+    top: 40px;
+    right: -20px;
+  }
+
+  &::after {
+    @include small-divider;
+    background-color: #cdcdcd;
+  }
+}
+
+.supplies__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+  gap: 14px;
+}
+
+.supplies__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px;
+
+  &::after {
+    @include small-divider;
+  }
+}
+
+.supplies__item-title {
+  margin: 0;
+  font-family: $font-large;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.supplies__product {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-low;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.supplies__button {
+  @include buttons;
+  line-height: 20px;
+}
+
+.supplies__gift {
+  position: relative;
+  background-image: url("../../img/catalog/supplies-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(104, 183, 56, 0.85);
+    width: 100%;
+    height: 100%;
+    min-height: 290px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.supplies__gift-link {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 60px 43px;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  gap: 40px;
+
+  &:hover .supplies__gift-text {
+    color: #f06351;
+  }
+
+  &:active .supplies__gift-text {
+    color: #444444;
+  }
+
+  &:focus {
+    outline: 2px solid #f06351;
+  }
+}
+
+.supplies__gift-icon {
+  z-index: 2;
+}
+
+.supplies__gift-text {
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  font-family: $font-low;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}

@@ -1,0 +1,102 @@
+.example {
+  background-color: #eaeaea;
+  padding: 25px 0 316px;
+}
+
+.example__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__description {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+
+.example__data-container {
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  margin: 0;
+  max-width: 280px;
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+.example__block-container {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 9px;
+
+  &:last-child {
+    grid-column: 2/3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/index/example-rectangle.svg");
+    width: 124px;
+    height: 56px;
+    top: -15px;
+  }
+}
+
+.example__number {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__text {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.example__costs {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.example__image-container {
+  position: relative;
+  display: flex;
+  background-color: inherit;
+}
+
+.example__image-block {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.example__image-before,
+.example__image-after {
+  overflow: hidden;
+}

@@ -1,0 +1,15 @@
+.radio {
+  position: relative;
+  padding-left: 45px;
+
+  & input[type="radio"]:checked + .radio__sort::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: #68b738;
+    border-radius: 50%;
+    top: 7.5px;
+    left: 7.5px;
+  }
+}

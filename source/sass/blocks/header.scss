@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  padding: 10px 0 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 0 32px;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 94px;
+  }
+}
+
+.header--divider::after {
+  @include large-divider();
+  background-color: #d9d9d9;
+  left: 0;
+}

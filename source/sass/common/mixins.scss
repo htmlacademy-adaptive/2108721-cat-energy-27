@@ -1,0 +1,102 @@
+@mixin small-divider {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #d9d9d9;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin large-divider {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #ebebeb;
+  bottom: 0;
+  left: -20px;
+}
+
+@mixin programs-arrow {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 32px;
+  top: 12px;
+  left: 112px;
+}
+
+@mixin advantages-picture {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+@mixin programs-picture-background {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-color: #68b738;
+  border-radius: 50%;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  top: 22px;
+  left: 20px;
+}
+
+@mixin programs-picture-image {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin buttons {
+  font-size: 16px;
+  line-height: 18px;
+  width: 280px;
+  height: 40px;
+}
+
+@mixin font-form {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@mixin input-number {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+@mixin title-line {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #68b738;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,17 @@
+.catalog {
+  position: relative;
+}
+
+.catalog__title {
+  font-family: $font-large;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 20px 41px;
+  margin: 0;
+
+  &::after {
+    @include large-divider;
+    top: 104px;
+    left: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.contact-field {
+  @include font-form;
+  align-items: center;
+  padding: 26px 0 12px;
+  row-gap: 14px;
+  column-gap: 10px;
+  text-transform: none;
+}
+
+.contact-field__title {
+  padding: 26px 83px 0 0;
+
+  &::after {
+    @include title-line;
+    width: 99px;
+    top: 41px;
+    right: -20px;
+  }
+}

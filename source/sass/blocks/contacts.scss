@@ -1,0 +1,42 @@
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 0 388px;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: left;
+  gap: 2px;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
+}
+
+.contacts__title {
+  @include visually-hidden;
+}
+
+.contacts__text {
+  margin: 0;
+  font-family: $font-large;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__map {
+  position: absolute;
+  border: none;
+  top: 112px;
+  left: 0;
+}
