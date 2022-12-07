@@ -37,6 +37,11 @@
   height: 60px;
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @mixin programs-picture-background {
@@ -50,13 +55,20 @@
   height: 50px;
   top: 22px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    top: 92px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
+  }
 }
+
 
 @mixin programs-picture-image {
   position: absolute;
   content: "";
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 @mixin buttons {
@@ -99,4 +111,14 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin advantages-number {
+  position: absolute;
+  font-size: 280px;
+  line-height: 280px;
+  font-family: $font-large;
+  color: #f2f2f2;
+  top: -39px;
+  left: 113px;
 }

@@ -1,12 +1,20 @@
 .example {
   background-color: #eaeaea;
   padding: 25px 0 316px;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+    padding: 43px 0 230px;
+  }
 }
 
 .example__container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .example__title {
@@ -14,24 +22,49 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
 }
 
 .example__description {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: $font-low;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 14px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
 }
 
 .example__data-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
+.example__data-options {
   display: grid;
   grid-template-columns: repeat(2, 124px);
   margin: 0;
-  max-width: 280px;
-  column-gap: 32px;
-  row-gap: 32px;
+  gap: 32px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 162px);
+    gap: 42px;
+    margin: 0;
+  }
 }
 
 .example__block-container {
@@ -43,9 +76,16 @@
   align-items: center;
   text-align: center;
   gap: 9px;
+  padding-top: 15px;
 
-  &:last-child {
+  &:nth-child(2) {
     grid-column: 2/3;
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        background-image: url("../../img/index/example-rectangle-medium-small.svg");
+      }
+    }
   }
 
   &::before {
@@ -54,23 +94,41 @@
     background-image: url("../../img/index/example-rectangle.svg");
     width: 124px;
     height: 56px;
-    top: -15px;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/index/example-rectangle-medium.svg");
+      width: 162px;
+      height: 72px;
+    }
   }
 }
 
 .example__number {
-  font-family: "Lato", sans-serif;
+  font-family: $font-low;
   font-size: 12px;
   line-height: 12px;
+  max-width: 77px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 125px;
+  }
 }
 
 .example__text {
   display: flex;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-large;
   font-size: 24px;
   line-height: 24px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__costs {
@@ -81,6 +139,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 130px;
+    text-align: end;
+    margin-bottom: 0;
+  }
 }
 
 .example__image-container {

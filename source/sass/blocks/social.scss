@@ -1,29 +1,59 @@
 .social {
+  padding: 39px 0 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 63px 0 60px;
+  }
+}
+
+.social__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .social__logo {
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 39px 0 32px;
+  padding-bottom: 32px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 0;
+  }
 
   &::after {
     @include small-divider;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .logo--footer {
+  height: fit-content;
+
   &:hover {
     opacity: 80%;
   }
 
   &:active {
     opacity: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+    width: fit-content;
   }
 }
 
@@ -39,9 +69,20 @@
   gap: 20px;
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    max-width: 162px;
+    justify-content: space-between;
+    gap: 26px;
+    padding: 0;
+  }
+
   &::after {
     @include small-divider;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
