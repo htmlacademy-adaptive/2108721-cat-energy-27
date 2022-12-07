@@ -1,0 +1,24 @@
+.field__container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+.field__title {
+  position: relative;
+  font-family: $font-large;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      @include title-line-left;
+    }
+  }
+}
+

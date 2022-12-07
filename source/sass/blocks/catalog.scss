@@ -9,9 +9,19 @@
   padding: 27px 20px 41px;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 32px 30px 41px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   &::after {
     @include large-divider;
     top: 104px;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

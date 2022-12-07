@@ -1,3 +1,9 @@
+.products {
+  @media (min-width: $tablet-width) {
+    padding: 41px 0 34px;
+  }
+}
+
 .products__head-title {
   @include visually-hidden;
 }
@@ -8,7 +14,12 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-bottom: 78px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
 }
 
 .products__item {
@@ -18,8 +29,24 @@
   grid-template-rows: (41px, 44px, 40px);
   padding: 19px 0 25px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 37px 39px;
+    background: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
+
+    &:nth-child(odd) > .products__image {
+      padding-top: 28px;
+    }
+  }
+
   &::after {
     @include large-divider;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -29,6 +56,12 @@
   justify-self: center;
   grid-column: 1/2;
   grid-row: 1/3;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    // добавить новые картинки
+    display: none;
+  }
 }
 
 .products__link {
@@ -37,6 +70,20 @@
   display: flex;
   text-decoration: none;
   margin-bottom: 14px;
+  padding-right: 64px;
+  font-family: $font-large;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 21px;
+    text-align: center;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 45px;
+  }
 
   &:hover .products__title {
     color: #68b738;
@@ -56,21 +103,45 @@
 }
 
 .products__title {
-  font-family: $font-large;
   color: #222222;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .products__item-name {
   display: grid;
   grid-template-columns: repeat(2, 70px);
-  grid-template-rows: repeat(3, 17px);
   margin: 0;
   font-family: $font-low;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 27px;
+  margin-bottom: 42px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 125px);
+    row-gap: 16px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.products__item-parametrs {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include small-divider;
+      width: 250px;
+      bottom: -9px;
+      left: 0;
+    }
+  }
 }
 
 .products__item-description {
@@ -84,4 +155,100 @@
   @include buttons;
   grid-column: 1/3;
   grid-row: 3/4;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.products--more {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 25px;
+  padding-top: 78px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    outline: 2px solid #f2f2f2;
+    padding: 161px 37px 38px;
+    background: #ffffff;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/catalog/more-plus.svg");
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    left: 119px;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      background-image: url("../../img/catalog/more-plus-medium.svg");
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      top: 52px;
+      left: 132px;
+    }
+  }
+}
+
+.more__text {
+  font-family: $font-large;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+    padding: 0 40px;
+  }
+}
+
+.more__description {
+  margin: 0;
+  font-family: $font-low;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+    padding: 0 15px;
+  }
+}
+
+.more__button {
+  @include buttons;
+  background-color: #f2f2f2;
+  color: #444444;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgb(68, 68, 68, 0.3);
+  }
+
+  &::after {
+    @include large-divider;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

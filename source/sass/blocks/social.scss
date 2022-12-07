@@ -1,6 +1,4 @@
 .social {
-  padding: 39px 0 22px;
-
   @media (min-width: $tablet-width) {
     padding: 63px 0 60px;
   }
@@ -22,6 +20,7 @@
   justify-content: center;
   position: relative;
   padding-bottom: 32px;
+  padding-top: 39px;
   width: 100%;
 
   @media (min-width: $tablet-width) {

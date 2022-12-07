@@ -1,11 +1,9 @@
-/* Chrome, Safari, Edge, Opera */
 .input::-webkit-outer-spin-button,
 .input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
 .input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -17,7 +15,12 @@
   padding: 13px 20px;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
-  min-width: 100px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::placeholder {
     color: #444444;
@@ -49,10 +52,28 @@
   background-image: url("../../img/form/email-filed-image.svg");
   background-repeat: no-repeat;
   background-position: right 16px top 16px;
+  border-color: #cdcdcd;
+
+  &:hover {
+    border-color: #e7e7e7;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: right 19px top 19px;
+  }
 }
 
 .input--tel {
   background-image: url("../../img/form/tel-field-image.svg");
   background-repeat: no-repeat;
   background-position: right 16px top 15px;
+  border-color: #cdcdcd;
+
+  &:hover {
+    border-color: #e7e7e7;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: right 19px top 19px;
+  }
 }

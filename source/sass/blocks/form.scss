@@ -4,4 +4,10 @@
   font-family: $font-large;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 34px 39px 27px 37px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

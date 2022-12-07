@@ -1,28 +1,48 @@
 .comment-field {
   @include font-form;
-  align-items: center;
   padding: 12px 0 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 33px;
+    flex-direction: column;
+  }
 }
 
 .comment-field__title {
   position: relative;
   padding: 12px 160px 38px 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 33px 454px 36px 0;
+
+    &::before {
+      bottom: 47px;
+    }
+  }
+
   &::after {
     @include title-line;
     width: 158px;
     top: 24px;
     right: -20px;
+
+    @media (min-width: $tablet-width) {
+      top: 55px;
+      right: -68px;
+    }
   }
 }
 
 .input--comment {
-  position: relative;
   min-height: 150px;
-  padding: 0 15px;
+  padding: 10px 15px;
 
   &::placeholder {
     position: absolute;
     text-transform: uppercase;
   }
+}
+
+.comment-field__name {
+  display: none;
 }

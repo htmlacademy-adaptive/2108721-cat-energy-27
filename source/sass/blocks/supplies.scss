@@ -1,3 +1,9 @@
+.supplies {
+  @media (min-width: $tablet-width) {
+    padding: 34px 0 38px;
+  }
+}
+
 .supplies__title {
   position: relative;
   padding: 25px 53px 36px 0;
@@ -6,16 +12,37 @@
   font-size: 24px;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 330px 80px 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &::before {
     @include title-line;
     width: 53px;
     top: 40px;
     right: -20px;
+
+    @media (min-width: $tablet-width) {
+      width: 328px;
+      top: 20px;
+      right: -30px;
+    }
   }
 
   &::after {
     @include small-divider;
     background-color: #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include title-line;
+      width: 30px;
+      top: 20px;
+      left: -30px;
+    }
   }
 }
 
@@ -24,8 +51,14 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
   gap: 14px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    outline: 1px solid #cdcdcd;
+    margin-bottom: 69px;
+    gap: 0;
+  }
 }
 
 .supplies__item {
@@ -34,17 +67,40 @@
   flex-direction: column;
   padding: 13px 0 19px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 26px 38px 28px;
+    gap: 21px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
   &::after {
     @include small-divider;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .supplies__item-title {
+  display: flex;
   margin: 0;
   font-family: $font-large;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .supplies__product {
@@ -53,14 +109,25 @@
   font-family: $font-low;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .supplies__button {
   @include buttons;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .supplies__gift {
+  display: block;
   position: relative;
   background-image: url("../../img/catalog/supplies-image.jpg");
   background-repeat: no-repeat;
@@ -69,6 +136,12 @@
   width: 100%;
   height: 100%;
   margin-bottom: 35px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 57px 124px 60px 77px;
+  }
 
   &::after {
     position: absolute;
@@ -76,7 +149,6 @@
     background-color: rgb(104, 183, 56, 0.85);
     width: 100%;
     height: 100%;
-    min-height: 290px;
     top: 0;
     left: 0;
   }
@@ -91,6 +163,12 @@
   text-decoration: none;
   gap: 40px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0;
+    gap: 256px;
+  }
+
   &:hover .supplies__gift-text {
     color: #f06351;
   }
@@ -100,7 +178,7 @@
   }
 
   &:focus {
-    outline: 2px solid #f06351;
+    color: #dfee10;
   }
 }
 
@@ -116,4 +194,8 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }

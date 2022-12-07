@@ -1,9 +1,14 @@
 .copyright {
-  width: 163px;
+  padding: 22px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 163px;
+  }
 }
 
 .copyright__link {
-  padding-top: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;

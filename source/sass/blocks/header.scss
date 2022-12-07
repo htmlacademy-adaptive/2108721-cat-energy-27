@@ -21,4 +21,8 @@
   @include large-divider();
   background-color: #d9d9d9;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
