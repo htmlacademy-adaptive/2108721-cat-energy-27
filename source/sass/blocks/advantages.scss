@@ -11,6 +11,14 @@
       background-color: #e6e6e6;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 69px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .advantages__title {
@@ -26,6 +34,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 76px;
   }
 }
 
@@ -43,6 +55,13 @@
     column-gap: 153px;
     row-gap: 77px;
     padding: 72px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+    padding: 0;
   }
 }
 

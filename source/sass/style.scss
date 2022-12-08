@@ -1,3 +1,4 @@
+@import "./common/global.scss";
 @import "./common/mixins.scss";
 @import "./common/variables.scss";
 @import "./common/fonts.scss";
@@ -36,9 +37,3 @@
 @import "./blocks/weight-title.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
-
-
-.page__body {
-  min-width: 320px;
-  margin: 0;
-}

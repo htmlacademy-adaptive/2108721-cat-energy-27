@@ -17,13 +17,17 @@
     width: 192px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 26px;
     z-index: 1;
     margin-left: 87px;
     margin-bottom: 526px;
   }
-}
 
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-bottom: 185px;
+  }
+}
 
 .programs__list {
   display: flex;
@@ -36,6 +40,12 @@
   @media (min-width: $tablet-width) {
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
 }
 
 .programs__item {
@@ -47,6 +57,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 52px 59px;
   }
 
   &::before {
@@ -69,6 +83,15 @@
       top: 81px;
       left: 476px;
     }
+
+    @media (min-width: $desktop-width) {
+      @include programs-picture-image;
+      background-image: url("../../img/index/programs-cat-large.svg");
+      width: 71px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+    }
   }
 
   &:nth-child(2)::after {
@@ -86,6 +109,15 @@
       height: 113px;
       top: 135px;
       left: 412px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include programs-picture-image;
+      background-image: url("../../img/index/programs-cugar-large.svg");
+      width: 135px;
+      height: 57px;
+      top: 67px;
+      left: 33px;
     }
   }
 }
@@ -105,6 +137,11 @@
     line-height: 36px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 0 36px 162px;
+    margin-bottom: 39px;
+  }
 }
 
 .programs__description {
@@ -120,6 +157,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
   }
 
   &::after {

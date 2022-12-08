@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 24px 0 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0 111px;
+  }
 }
 
 .header__container {
@@ -15,6 +19,10 @@
   @media (min-width: $tablet-width) {
     gap: 94px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 540px;
+  }
 }
 
 .header--divider::after {
@@ -23,6 +31,10 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

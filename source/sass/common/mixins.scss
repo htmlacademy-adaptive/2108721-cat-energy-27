@@ -62,6 +62,13 @@
     width: 200px;
     height: 200px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 
