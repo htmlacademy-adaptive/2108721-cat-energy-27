@@ -1,6 +1,6 @@
 .comment-field {
   @include font-form;
-  padding: 12px 0 12px;
+  padding: 12px 0 11px;
 
   @media (min-width: $tablet-width) {
     padding: 33px 0 33px;
@@ -10,7 +10,7 @@
 
 .comment-field__title {
   position: relative;
-  padding: 12px 160px 38px 0;
+  padding: 12px 160px 27px 0;
 
   @media (min-width: $tablet-width) {
     padding: 33px 454px 36px 0;
@@ -20,6 +20,10 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 33px 1038px 36px 0;
+  }
+
   &::after {
     @include title-line;
     width: 158px;
@@ -27,8 +31,15 @@
     right: -20px;
 
     @media (min-width: $tablet-width) {
+      width: 478px;
       top: 55px;
       right: -68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1108px;
+      top: 52px;
+      right: -111px;
     }
   }
 }

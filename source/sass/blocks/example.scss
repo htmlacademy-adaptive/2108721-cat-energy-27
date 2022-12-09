@@ -42,6 +42,7 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -51,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/3;
-    background-color: #ffffff;
+    background-color: transparent;
     margin-bottom: 146px;
   }
 }
@@ -61,7 +62,7 @@
   font-family: $font-low;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -214,7 +215,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: none;
+    max-width: 175px;
   }
 }
 
@@ -226,7 +227,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: none;
+    max-width: 120px;
   }
 }
 

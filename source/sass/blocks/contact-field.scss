@@ -12,16 +12,30 @@
     align-items: flex-start;
     padding: 75px 0 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 78px;
+    padding: 69px 0 33px;
+  }
 }
 
 .contact-field__title {
-  padding: 26px 83px 0 0;
+  padding: 26px 83px 7px 0;
 
   @media (min-width: $tablet-width) {
     padding: 75px 120px 0 0;
 
     &::before {
       bottom: 12px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 705px 76px 0;
+
+    &::before {
+      bottom: 90px;
     }
   }
 
@@ -35,6 +49,12 @@
       width: 145px;
       top: 99px;
       right: -68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 778px;
+      top: 91px;
+      right: -110px;
     }
   }
 }

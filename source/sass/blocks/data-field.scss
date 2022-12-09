@@ -17,6 +17,11 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 509px;
+  }
 }
 
 .data-field__container {

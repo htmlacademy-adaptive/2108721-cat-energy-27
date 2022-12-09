@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header header--divider">
+  <header class="header">
     <div class="header__container container">
       <a class="logo" href="index.html">
         <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
@@ -45,48 +45,50 @@
       <form class="selection" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="selection__title">Заполните анкету, и мы подберем</br>
           программу питания для вашего кота</h2>
-        <fieldset class="selection__field data-field">
-          <legend class="data-field__head-title">Данные Вашего кота.</legend>
-          <div class="data-field__container field__container">
-            <label class="data-field__title name-title" for="name">ИМЯ:*</label>
-            <input class="data-field__input input" id="name" type="text" name="data" placeholder="БАРСИК" required>
-          </div>
-          <div class="data-field__container field__container">
-            <label class="data-field__title weight-title" for="weight">Вес (кг):*</label>
-            <input class="data-field__input input" id="weight" type="number" name="data" placeholder="7" required>
-          </div>
-          <div class="data-field__container field__container">
-            <label class="data-field__title age-title" for="age">Возраст (лет):</label>
-            <input class="data-field__input input input--age" id="age" type="number" name="data" placeholder="7">
-          </div>
-        </fieldset>
-        <fieldset class="selection__field target-field">
-          <legend class="target-field__title">Цель Вашей программы.</legend>
-          <ul class="target-field__list">
-            <li class="target-field__item">
-              <label class="target-field__radio radio" for="weightloss">
-                <input class="target-field__input" type="radio" name="selection" value="похудение" id="weightloss"
-                  checked>
-                <span class="radio__sort" tabindex="0"></span>
-                <span class="radio__name">похудение</span>
-              </label>
-            </li>
-            <li class="target-field__item">
-              <label class="target-field__radio radio" for="wieghtrise">
-                <input class="target-field__input" type="radio" name="selection" value="набор массы" id="wieghtrise">
-                <span class="radio__sort" tabindex="0"></span>
-                <span class="radio__name">Набор массы</span>
-              </label>
-            </li>
-            <li class="target-field__item">
-              <label class="target-field__radio radio" for="advice">
-                <input class="target-field__input" type="radio" name="selection" value="ПОХУДЕНИЕ" id="advice">
-                <span class="radio__sort" tabindex="0"></span>
-                <span class="radio__name">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="selection__field-container">
+          <fieldset class="selection__field data-field">
+            <legend class="data-field__head-title">Данные Вашего кота.</legend>
+            <div class="data-field__container field__container">
+              <label class="data-field__title name-title" for="name">ИМЯ:*</label>
+              <input class="data-field__input input" id="name" type="text" name="data" placeholder="БАРСИК" required>
+            </div>
+            <div class="data-field__container field__container">
+              <label class="data-field__title weight-title" for="weight">Вес (кг):*</label>
+              <input class="data-field__input input" id="weight" type="number" name="data" placeholder="7" required>
+            </div>
+            <div class="data-field__container field__container">
+              <label class="data-field__title age-title" for="age">Возраст (лет):</label>
+              <input class="data-field__input input input--age" id="age" type="number" name="data" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="selection__field target-field">
+            <legend class="target-field__title">Цель Вашей программы.</legend>
+            <ul class="target-field__list">
+              <li class="target-field__item">
+                <label class="target-field__radio radio" for="weightloss">
+                  <input class="target-field__input" type="radio" name="selection" value="похудение" id="weightloss"
+                    checked>
+                  <span class="radio__sort" tabindex="0"></span>
+                  <span class="radio__name">похудение</span>
+                </label>
+              </li>
+              <li class="target-field__item">
+                <label class="target-field__radio radio" for="wieghtrise">
+                  <input class="target-field__input" type="radio" name="selection" value="набор массы" id="wieghtrise">
+                  <span class="radio__sort" tabindex="0"></span>
+                  <span class="radio__name">Набор массы</span>
+                </label>
+              </li>
+              <li class="target-field__item">
+                <label class="target-field__radio radio" for="advice">
+                  <input class="target-field__input" type="radio" name="selection" value="ПОХУДЕНИЕ" id="advice">
+                  <span class="radio__sort" tabindex="0"></span>
+                  <span class="radio__name">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="selection__field contact-field">
           <legend class="contact-field__title field__title">Контактные данные
             (владельца кота)</legend>
@@ -154,10 +156,12 @@
       <div class="contacts contacts--background">
         <div class="contacts__container container">
           <h2 class="contacts__title">Наши контактные данные.</h2>
-          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <p class="contacts__text">приглашаем</br> к сотрудничеству дилеров!</p>
+          <div class="contacts__adress-container">
+            <span class="contacts__adress">ул. Большая
+              Конюшенная, д. 19/8</span>
+            <span class="contacts__adress">Санкт-Петербург</span>
+          </div>
         </div>
         <iframe class="contacts__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"

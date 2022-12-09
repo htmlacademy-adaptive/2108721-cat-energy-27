@@ -1,6 +1,6 @@
 .social {
   @media (min-width: $tablet-width) {
-    padding: 63px 0 60px;
+    padding: 58px 0 55px;
   }
 }
 
@@ -19,8 +19,8 @@
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 32px;
-  padding-top: 39px;
+  padding-bottom: 27px;
+  padding-top: 34px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -63,7 +63,7 @@
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 0;
-  padding: 18px 0;
+  padding: 17px 0;
   list-style-type: none;
   gap: 20px;
   width: 100%;

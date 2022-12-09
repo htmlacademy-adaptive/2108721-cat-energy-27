@@ -21,10 +21,10 @@
 @mixin programs-arrow {
   position: absolute;
   content: "";
-  height: 10px;
+  height: 11px;
   width: 32px;
   top: 12px;
-  left: 112px;
+  right: 0;
 }
 
 @mixin advantages-picture {
@@ -82,7 +82,7 @@
   font-size: 16px;
   line-height: 18px;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
 }
 
 @mixin font-form {

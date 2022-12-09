@@ -2,21 +2,28 @@
   @media (min-width: $tablet-width) {
     padding: 0 37px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .selection__title {
   margin: 0;
-  padding: 37px 0 20px;
+  padding: 10px 0 20px;
   font-family: $font-large;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
     padding: 27px 0 33px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 66px;
   }
 }
 
@@ -25,6 +32,15 @@
   border: none;
   margin: 0;
   display: flex;
+}
+
+.selection__field-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+  }
 }
 
 .selection__bottom {
@@ -37,21 +53,31 @@
     flex-direction: row;
     gap: 64px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0 82px;
+    gap: 84px;
+  }
 }
 
 .selection__button {
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
     width: 282px;
     font-size: 20px;
-    height: 52px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
   }
 }
 
 .selection__tooltip {
+  font-family: $font-low;
   padding: 21px 0 0;
   font-size: 14px;
   line-height: 16px;
@@ -59,5 +85,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     font-size: 16px;
+    max-width: 200px;
   }
 }

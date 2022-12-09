@@ -20,4 +20,12 @@
       @include title-line-left;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include title-line-left;
+      width: 70px;
+      left: -110px;
+    }
+  }
 }
