@@ -8,10 +8,11 @@
   line-height: 36px;
   font-weight: 400;
   padding: 26px 20px 40px;
-  margin: 0;
+  margin: 0 auto;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #ebebeb;
   max-width: 280px;
+
 
   @media (min-width: $tablet-width) {
     padding: 32px 30px 41px;

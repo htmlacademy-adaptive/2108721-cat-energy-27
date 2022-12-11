@@ -5,6 +5,7 @@
 .programs__container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .programs__choose {
@@ -78,7 +79,7 @@
 
     @media (min-width: $tablet-width) {
       @include programs-picture-image;
-      background-image: url("../../img/index/programs-cat-medium.svg");
+      background-size: 141px 194px;
       width: 141px;
       height: 194px;
       top: 81px;
@@ -87,7 +88,7 @@
 
     @media (min-width: $desktop-width) {
       @include programs-picture-image;
-      background-image: url("../../img/index/programs-cat-large.svg");
+      background-size: 71px 97px;
       width: 71px;
       height: 97px;
       top: 41px;
@@ -105,7 +106,7 @@
 
     @media (min-width: $tablet-width) {
       @include programs-picture-image;
-      background-image: url("../../img/index/programs-cugar-medium.svg");
+      background-size: 269px 113px;
       width: 269px;
       height: 113px;
       top: 135px;
@@ -114,7 +115,7 @@
 
     @media (min-width: $desktop-width) {
       @include programs-picture-image;
-      background-image: url("../../img/index/programs-cugar-large.svg");
+      background-size: 135px 57px;
       width: 135px;
       height: 57px;
       top: 67px;

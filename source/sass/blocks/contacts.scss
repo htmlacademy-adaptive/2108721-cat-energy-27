@@ -4,7 +4,6 @@
   flex-direction: column;
   padding: 26px 0 388px;
   background-color: #ffffff;
-  // background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 460px;
@@ -24,8 +23,10 @@
 }
 
 .contacts__container {
+  position: relative;
   display: flex;
   gap: 15px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     gap: 0;
@@ -39,7 +40,7 @@
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 5;
   }
 }
 
@@ -70,6 +71,7 @@
 .contacts__adress-container {
   display: flex;
   flex-direction: column;
+  z-index: 13;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -106,18 +108,19 @@
 .contacts__map {
   position: absolute;
   border: none;
-  top: 112px;
+  top: 86px;
   left: 0;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
-    top: 198px;
+    top: 138px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
-    top: 0;
+    top: -95px;
+    left: -440px;
   }
 }

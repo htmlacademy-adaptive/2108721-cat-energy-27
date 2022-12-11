@@ -16,6 +16,7 @@
 .example__container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -122,7 +123,7 @@
 
     &::before {
       @media (min-width: $tablet-width) {
-        background-image: url("../../img/index/example-rectangle-medium-small.svg");
+        background-image: url("../../img/index/example-rectangle-bottom.svg");
       }
     }
   }
@@ -131,12 +132,13 @@
     position: absolute;
     content: "";
     background-image: url("../../img/index/example-rectangle.svg");
+    background-repeat: no-repeat;
     width: 124px;
     height: 56px;
     top: 0;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/index/example-rectangle-medium.svg");
+      background-size: 162px 72px;
       width: 162px;
       height: 72px;
     }

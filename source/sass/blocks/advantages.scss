@@ -21,6 +21,10 @@
   }
 }
 
+.advantages__container {
+  margin: 0 auto;
+}
+
 .advantages__title {
   @include visually-hidden;
 }

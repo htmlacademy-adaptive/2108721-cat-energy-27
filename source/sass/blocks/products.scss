@@ -8,6 +8,10 @@
   }
 }
 
+.products__container {
+  margin: 0 auto;
+}
+
 .products__head-title {
   @include visually-hidden;
 }
@@ -230,15 +234,14 @@
     position: absolute;
     content: "";
     background-image: url("../../img/catalog/more-plus.svg");
+    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     top: 25px;
     left: 119px;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
-      background-image: url("../../img/catalog/more-plus-medium.svg");
-      background-repeat: no-repeat;
+      background-size: 60px 60px;
       width: 60px;
       height: 60px;
       top: 52px;
@@ -246,8 +249,8 @@
     }
 
     @media (min-width: $desktop-width) {
-     top: 51px;
-     left: 92px;
+      top: 51px;
+      left: 92px;
     }
   }
 }

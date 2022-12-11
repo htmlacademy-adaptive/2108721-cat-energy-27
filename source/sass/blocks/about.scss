@@ -16,10 +16,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 138px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     align-items: flex-start;
   }
 
@@ -38,7 +39,7 @@
   &::after {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 100%;
     height: 302px;
     background-image: url("../../img/index/about-back-image.png");
     z-index: -1;
