@@ -1,9 +1,13 @@
 .header {
   position: relative;
-  padding: 10px 0 18px;
+  padding: 5px 0 12px;
 
   @media (min-width: $tablet-width) {
     padding: 24px 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0 32px;
   }
 }
 
@@ -11,9 +15,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    gap: 94px;
+    gap: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 540px;
   }
 }
 
@@ -21,4 +30,12 @@
   @include large-divider();
   background-color: #d9d9d9;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

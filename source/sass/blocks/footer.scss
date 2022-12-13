@@ -2,5 +2,28 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #f2f2f2;
+
+  &--background {
+    background-color: #f2f2f2;
+
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.footer__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }

@@ -1,7 +1,10 @@
 .check {
-  position: relative;
   padding-left: 46px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 
   & input[type="checkbox"]:checked + .check__sort::before {
     position: absolute;
@@ -12,5 +15,13 @@
     background-repeat: no-repeat;
     top: 6px;
     left: 6px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/form/check-sort-image-medium.svg");
+      width: 24px;
+      height: 19px;
+      top: 11px;
+      left: 8px;
+    }
   }
 }

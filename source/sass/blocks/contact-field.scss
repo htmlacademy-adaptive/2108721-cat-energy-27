@@ -1,19 +1,69 @@
 .contact-field {
   @include font-form;
-  align-items: center;
   padding: 26px 0 12px;
   row-gap: 14px;
   column-gap: 10px;
   text-transform: none;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 75px 0 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 78px;
+    padding: 69px 0 33px;
+  }
 }
 
 .contact-field__title {
-  padding: 26px 83px 0 0;
+  padding: 26px 83px 7px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 75px 120px 0 0;
+
+    &::before {
+      bottom: 12px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 705px 76px 0;
+
+    &::before {
+      bottom: 90px;
+    }
+  }
 
   &::after {
     @include title-line;
     width: 99px;
     top: 41px;
     right: -20px;
+
+    @media (min-width: $tablet-width) {
+      width: 145px;
+      top: 99px;
+      right: -68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 778px;
+      top: 91px;
+      right: -110px;
+    }
+  }
+}
+
+.contact-field__container {
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    width: 100%;
   }
 }

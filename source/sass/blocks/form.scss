@@ -1,7 +1,24 @@
+.form__container {
+  margin: 0 auto;
+}
+
 .form__title {
   margin: 0;
-  padding: 27px 20px 17px;
+  padding: 27px 0 17px;
   font-family: $font-large;
   font-size: 36px;
   line-height: 36px;
+  border-top: 1px solid #cdcdcd;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 34px 39px 27px 37px;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 0 56px;
+  }
 }

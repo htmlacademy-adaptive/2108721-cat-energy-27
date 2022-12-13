@@ -1,18 +1,48 @@
 .additional-field {
   @include font-form;
-  align-items: center;
-  padding: 12px 0 24px;
+  padding: 11px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 0 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 0 32px;
+  }
 }
 
 .additional-field__title {
   position: relative;
-  padding: 12px 139px 40px 0;
+  padding: 11px 139px 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 440px 38px 0;
+
+    &::before {
+      bottom: 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 1008px 38px 0;
+  }
 
   &::after {
     @include title-line;
     width: 136px;
     top: 26px;
     right: -20px;
+
+    @media (min-width: $tablet-width) {
+      width: 446px;
+      top: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1078px;
+      top: 53px;
+      right: -110px;
+    }
   }
 }
 
@@ -25,12 +55,34 @@
   gap: 13px;
   text-transform: uppercase;
   color: #000000;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 282px);
+    column-gap: 64px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 104px;
+    row-gap: 15px;
+  }
 }
 
 .additional-field__item {
+  position: relative;
   display: flex;
   align-items: center;
   min-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40px;
+  }
 }
 
 .additional-field__input {
@@ -43,9 +95,15 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
-  top: -6px;
+  top: 0;
   left: 0;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
 
   &:hover {
     border-color: #bababa;

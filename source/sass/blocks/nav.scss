@@ -1,40 +1,43 @@
 .nav {
-  position: relative;
-}
-
-.nav__button {
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
-  padding: 5px;
-
-  &:hover {
-    background-color: #ebebeb;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
-
-  &:focus {
-    outline: 2px solid #68b738;
-  }
+  display: flex;
 }
 
 .nav__container {
   position: absolute;
-  bottom: -224px;
-  right: -20px;
+  top: 65px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .nav__list {
   position: relative;
-  display: block;
-  flex-direction: column;
+  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 445px;
+    column-gap: 34px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 34px;
+    max-width: 500px;
+    // исправить проблему с переполнением и картинкой с котом
+  }
 }
 
 .nav__item {
@@ -49,8 +52,22 @@
   height: 66px;
   width: 320px;
 
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+
   &:first-child {
     border-top: 1px solid #e6e6e6;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
 
@@ -60,12 +77,17 @@
   align-items: center;
   text-decoration: none;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-large;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 20px;
   padding: 10px 0;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
   &--current::after {
     position: absolute;
@@ -75,6 +97,14 @@
     background-color: #68b738;
     bottom: 0;
     right: 0;
+  }
+
+  &--color {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:hover {
@@ -88,38 +118,31 @@
   &:focus {
     outline: 2px solid #68b738;
     outline-offset: 2px;
+
+    @media (min-width: $desktop-width) {
+      outline-color: #f06351;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .nav__container {
-    position: static;
+.nav__link--underline::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: 0;
+    right: 0;
   }
+}
 
-  .nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 440px;
-  }
+.nav__button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 
-  .nav__item {
-    width: auto;
-    height: auto;
-    border: none;
-
-    &:first-child {
-      border: none;
-    }
-  }
-
-  .nav__link {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .nav__button {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
-

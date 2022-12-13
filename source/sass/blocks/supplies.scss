@@ -1,3 +1,17 @@
+.supplies {
+  @media (min-width: $tablet-width) {
+    padding: 34px 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
+  }
+}
+
+.supplies__container {
+  margin: 0 auto;
+}
+
 .supplies__title {
   position: relative;
   padding: 25px 53px 36px 0;
@@ -6,16 +20,61 @@
   font-size: 24px;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 330px 80px 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 870px 81px 0;
+  }
+
   &::before {
     @include title-line;
     width: 53px;
     top: 40px;
     right: -20px;
+
+    @media (min-width: $tablet-width) {
+      width: 328px;
+      top: 20px;
+      right: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 957px;
+      right: -110px;
+    }
   }
 
   &::after {
     @include small-divider;
     background-color: #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include title-line;
+      width: 30px;
+      top: 20px;
+      left: -30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 70px;
+      left: -110px;
+    }
+  }
+}
+
+.supplies__product-container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 79px;
+    height: auto;
   }
 }
 
@@ -24,8 +83,21 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
   gap: 14px;
+  margin-bottom: 35px;
+
+
+  @media (min-width: $tablet-width) {
+    outline: 1px solid #cdcdcd;
+    margin-bottom: 69px;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    outline: none;
+    border: 0;
+    margin-bottom: 0;
+  }
 }
 
 .supplies__item {
@@ -34,17 +106,62 @@
   flex-direction: column;
   padding: 13px 0 19px;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 26px 38px 28px;
+    gap: 21px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    @media (min-width: $desktop-width) {
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    padding: 15px 0 17px;
+    width: 895px;
+    gap: 0;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
   &::after {
     @include small-divider;
+    background-color: #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
 .supplies__item-title {
+  display: flex;
   margin: 0;
   font-family: $font-large;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    max-width: 350px;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
 }
 
 .supplies__product {
@@ -53,14 +170,50 @@
   font-family: $font-low;
   font-size: 14px;
   line-height: 14px;
+  margin: 13px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.supplies__product-position {
+  max-width: 200px;
+  align-self: center;
+
+  @media (min-width: $desktop-width) {
+    width: 243px;
+  }
+}
+
+.supplies__product-description {
+  align-self: center;
+
+  @media (min-width: $desktop-width) {
+    width: 82px;
+    margin: 0;
+  }
 }
 
 .supplies__button {
   @include buttons;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    min-height: 40px;
+    height: 100%;
+  }
 }
 
 .supplies__gift {
+  display: block;
   position: relative;
   background-image: url("../../img/catalog/supplies-image.jpg");
   background-repeat: no-repeat;
@@ -69,6 +222,16 @@
   width: 100%;
   height: 100%;
   margin-bottom: 35px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 57px 124px 60px 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 43px 42px 41px;
+  }
 
   &::after {
     position: absolute;
@@ -76,7 +239,6 @@
     background-color: rgb(104, 183, 56, 0.85);
     width: 100%;
     height: 100%;
-    min-height: 290px;
     top: 0;
     left: 0;
   }
@@ -85,11 +247,22 @@
 .supplies__gift-link {
   display: flex;
   flex-direction: column;
-  padding: 65px 60px 43px;
+  padding: 66px 60px 43px;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
   gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0;
+    gap: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 60px;
+  }
 
   &:hover .supplies__gift-text {
     color: #f06351;
@@ -100,7 +273,7 @@
   }
 
   &:focus {
-    outline: 2px solid #f06351;
+    color: #dfee10;
   }
 }
 
@@ -116,4 +289,12 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

@@ -5,13 +5,7 @@
 .programs__container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.programs__choose {
-  width: 100%;
-  padding: 7px 0;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .programs__list {
@@ -21,6 +15,17 @@
   padding: 0;
   list-style-type: none;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+    padding-top: 82px;
+  }
 }
 
 .programs__item {
@@ -28,7 +33,15 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 30px 33px 22px 19px;
+  padding: 30px 19px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 57px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 52px 59px;
+  }
 
   &::before {
     @include programs-picture-background();
@@ -41,6 +54,24 @@
     height: 50px;
     top: 19px;
     left: 27px;
+
+    @media (min-width: $tablet-width) {
+      @include programs-picture-image;
+      background-size: 141px 194px;
+      width: 141px;
+      height: 194px;
+      top: 81px;
+      left: 476px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include programs-picture-image;
+      background-size: 71px 97px;
+      width: 71px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+    }
   }
 
   &:nth-child(2)::after {
@@ -50,6 +81,24 @@
     height: 29px;
     top: 33px;
     left: 11px;
+
+    @media (min-width: $tablet-width) {
+      @include programs-picture-image;
+      background-size: 269px 113px;
+      width: 269px;
+      height: 113px;
+      top: 135px;
+      left: 412px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include programs-picture-image;
+      background-size: 135px 57px;
+      width: 135px;
+      height: 57px;
+      top: 67px;
+      left: 33px;
+    }
   }
 }
 
@@ -61,6 +110,19 @@
   text-transform: uppercase;
   padding-left: 72px;
   margin-bottom: 29px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 0 36px 162px;
+    margin-bottom: 39px;
+  }
 }
 
 .programs__description {
@@ -70,7 +132,17 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 27px;
+  }
 
   &::after {
     position: absolute;
@@ -80,6 +152,10 @@
     background-color: #d9d9d9;
     bottom: -23px;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -93,15 +169,34 @@
   line-height: 16px;
   text-transform: uppercase;
   padding: 5px 51px 5px 5px;
+  max-width: 150px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 57px;
+    max-width: 180px;
+  }
 
   &::after {
     @include programs-arrow;
     background-image: url("../../img/index/programs-link-arrow.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 133px;
+      top: 15px;
+    }
   }
 
   &:hover::after {
     @include programs-arrow;
     background-image: url("../../img/index/programs-link-arrow-large.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 133px;
+      top: 15px;
+    }
   }
 
   &:active {
@@ -110,7 +205,12 @@
 
   &:active::after {
     @include programs-arrow;
-    background-image: url("../../img/programs-link-arrow-large.svg");
+    background-image: url("../../img/index/programs-link-arrow-large.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 133px;
+      top: 15px;
+    }
   }
 
   &:focus {

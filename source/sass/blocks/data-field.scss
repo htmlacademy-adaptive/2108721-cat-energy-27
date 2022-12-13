@@ -1,15 +1,42 @@
 .data-field {
   padding: 19px 0 24px;
   gap: 14px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 72px;
+    flex-direction: column;
+    gap: 20px;
+  }
 
   &::after {
     @include large-divider;
     background-color: #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 509px;
+  }
+}
+
+.data-field__container {
+  gap: 13px;
 }
 
 .data-field__title {
   @include font-form;
+  display: flex;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .data-field__head-title {

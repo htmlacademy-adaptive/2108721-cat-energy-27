@@ -1,10 +1,11 @@
+@import "./common/global.scss";
 @import "./common/mixins.scss";
-@import "./blocks/input.scss";
 @import "./common/variables.scss";
+@import "./common/fonts.scss";
+@import "./blocks/input.scss";
 @import "./blocks/about.scss";
 @import "./blocks/additional-field.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/age-title.scss";
 @import "./blocks/button.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/check.scss";
@@ -13,10 +14,7 @@
 @import "./blocks/container.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/data-field.scss";
-@import "./blocks/email-input.scss";
-@import "./blocks/email-title.scss";
 @import "./blocks/example.scss";
-@import "./blocks/field-title.scss";
 @import "./blocks/field.scss";
 @import "./blocks/form.scss";
 @import "./blocks/logo.scss";
@@ -24,21 +22,11 @@
 @import "./blocks/footer.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
-@import "./blocks/name-title.scss";
 @import "./blocks/products.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/radio.scss";
 @import "./blocks/selection.scss";
-@import "./blocks/more.scss";
 @import "./blocks/supplies.scss";
 @import "./blocks/target-field.scss";
-@import "./blocks/tel-input.scss";
-@import "./blocks/tel-title.scss";
-@import "./blocks/weight-title.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
-@import "./common/fonts.scss";
-
-.page__body {
-  min-width: 320px;
-}

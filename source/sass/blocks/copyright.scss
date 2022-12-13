@@ -1,9 +1,14 @@
 .copyright {
+  padding: 22px 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 163px;
+  }
 }
 
 .copyright__link {
-  padding: 22px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +29,14 @@
   &:focus {
     outline: 2px solid #68b738;
     outline-offset: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    gap: 23px;
+    width: 163px;
+    margin: 0;
+    padding: 0;
   }
 }
 

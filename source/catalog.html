@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header header--divider">
+  <header class="header">
     <div class="header__container container">
       <a class="logo" href="index.html">
         <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
@@ -49,7 +49,7 @@
             <img class="products__image" src="./img/catalog/pro-chicken-little.jpg" width="68" height="86"
               alt="Банка корма 500г, куриный вкус.">
             <a class="products__link" href="#">
-              <h3 class="products__title">Cat Energy</br>
+              <h3 class="products__title">Cat Energy
                 PRO
                 500 г</h3>
             </a>
@@ -171,83 +171,85 @@
             </dl>
             <button class="products__item-button button">заказать</button>
           </li>
+          <li class="products__item products--more">
+            <p class="more__text">Показать еще 100500 товаров</p>
+            <p class="more__description">На самом деле вкусов гораздо больше!</p>
+            <button class="more__button button" type="button">показать все</button>
+          </li>
         </ul>
-        <div class="more">
-          <p class="more__text">Показать еще 100500 товаров</p>
-          <p class="more__description">На самом деле вкусов гораздо больше!</p>
-          <button class="more__button button" type="button">показать все</button>
-        </div>
       </div>
     </section>
     <section class="supplies">
       <div class="supplies__container container">
         <h2 class="supplies__title">Дополнительные товары</h2>
-        <ul class="supplies__list">
-          <li class="supplies__item">
-            <h3 class="supplies__item-title">Сахарозаменитель</h3>
-            <dl class="supplies__product">
-              <dt class="supplies__product-position">1 упаковка (100 г)</dt>
-              <dd class="supplies__product-description">200 ₽</dd>
-            </dl>
-            <button class="supplies__button button">заказать</button>
-
-          </li>
-          <li class="supplies__item">
-            <h3 class="supplies__item-title">питьевая вода</h3>
-            <dl class="supplies__product">
-              <dt class="supplies__product-position">5 литров</dt>
-              <dd class="supplies__product-description">50 ₽</dd>
-            </dl>
-            <button class="supplies__button button">заказать</button>
-
-          </li>
-          <li class="supplies__item">
-            <h3 class="supplies__item-title">молоко</h3>
-            <dl class="supplies__product">
-              <dt class="supplies__product-position">1 литр</dt>
-              <dd class="supplies__product-description">100 ₽</dd>
-            </dl>
-            <button class="supplies__button button">заказать</button>
-
-          </li>
-          <li class="supplies__item">
-            <h3 class="supplies__item-title">витамины</h3>
-            <dl class="supplies__product">
-              <dt class="supplies__product-position">1 упаковка (30 г)</dt>
-              <dd class="supplies__product-description">300 ₽</dd>
-            </dl>
-            <button class="supplies__button button">заказать</button>
-
-          </li>
-        </ul>
-        <div class="supplies__gift">
-          <a class="supplies__gift-link" href="#">
-            <img class="supplies__gift-icon" src="./img/catalog/gift-icon.svg" width="78" height="80"
-              alt="Подарок при заказе всех товаров.">
-            <p class="supplies__gift-text">Закажите все
-              и получите чехол для
-              кота в подарок!</p>
-          </a>
+        <div class="supplies__product-container">
+          <ul class="supplies__list">
+            <li class="supplies__item">
+              <h3 class="supplies__item-title">Сахарозаменитель</h3>
+              <dl class="supplies__product">
+                <dt class="supplies__product-position">1 упаковка (100 г)</dt>
+                <dd class="supplies__product-description">200 ₽</dd>
+              </dl>
+              <button class="supplies__button button">заказать</button>
+            </li>
+            <li class="supplies__item">
+              <h3 class="supplies__item-title">питьевая вода</h3>
+              <dl class="supplies__product">
+                <dt class="supplies__product-position">5 литров</dt>
+                <dd class="supplies__product-description">50 ₽</dd>
+              </dl>
+              <button class="supplies__button button">заказать</button>
+            </li>
+            <li class="supplies__item">
+              <h3 class="supplies__item-title">молоко</h3>
+              <dl class="supplies__product">
+                <dt class="supplies__product-position">1 литр</dt>
+                <dd class="supplies__product-description">100 ₽</dd>
+              </dl>
+              <button class="supplies__button button">заказать</button>
+            </li>
+            <li class="supplies__item">
+              <h3 class="supplies__item-title">витамины</h3>
+              <dl class="supplies__product">
+                <dt class="supplies__product-position">1 упаковка (30 г)</dt>
+                <dd class="supplies__product-description">300 ₽</dd>
+              </dl>
+              <button class="supplies__button button">заказать</button>
+            </li>
+          </ul>
+          <div class="supplies__gift">
+            <a class="supplies__gift-link" href="#">
+              <img class="supplies__gift-icon" src="./img/catalog/gift-icon.svg" width="78" height="80"
+                alt="Подарок при заказе всех товаров.">
+              <p class="supplies__gift-text">Закажите все
+                и получите чехол для
+                кота в подарок!</p>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer--background">
     <div class="footer__container">
-      <div class="footer__contacts contacts">
-        <div class="contacts__container contacts__container--color container">
+      <div class="contacts contacts--background">
+        <div class="contacts__container container">
           <h2 class="contacts__title">Наши контактные данные.</h2>
-          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__adress">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+          <p class="contacts__text">приглашаем</br> к сотрудничеству дилеров!</p>
+          <div class="contacts__adress-container">
+            <span class="contacts__adress">ул. Большая
+              Конюшенная, д. 19/8</span>
+            <span class="contacts__adress">Санкт-Петербург</span>
+          </div>
         </div>
-        <iframe class="contacts__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
-          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Офис производителя питания для котов Cat Energy."></iframe>
       </div>
-      <div class="social container">
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
+        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Офис производителя питания для котов Cat Energy."></iframe>
+    </div>
+    <div class="social">
+      <div class="social__container container">
         <div class="social__logo">
           <a class="logo logo--footer" href="#">
             <img src="./img/logo-text.svg" width="128" height="24" alt="CAT ENERGY.">
