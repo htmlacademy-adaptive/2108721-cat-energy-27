@@ -211,7 +211,7 @@
   }
 }
 
-.products--more {
+.products__item--more {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -254,7 +254,7 @@
   }
 }
 
-.more__text {
+.products__text {
   font-family: $font-large;
   text-transform: uppercase;
   line-height: 20px;
@@ -272,7 +272,7 @@
   }
 }
 
-.more__description {
+.products__description {
   margin: 0;
   font-family: $font-low;
   font-size: 12px;
@@ -291,7 +291,7 @@
   }
 }
 
-.more__button {
+.products__button {
   @include buttons;
   background-color: #f2f2f2;
   color: #444444;

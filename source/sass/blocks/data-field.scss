@@ -25,6 +25,7 @@
 }
 
 .data-field__container {
+  @include field-container;
   gap: 13px;
 }
 

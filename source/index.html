@@ -11,39 +11,34 @@
 <body class="page__body">
   <header class="header">
     <div class="header__container container">
-      <a class="logo" href="index.html">
+      <a class="logo" href="#">
         <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
           alt="Кот в маске Бэтмена показывает язык.">
         <img class="logo__image" src="./img/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
       </a>
-      <nav class="nav">
-        <button class="nav__button" type="button">
-          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-            aria-label="открыть меню сайта.">
-            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" />
-          </svg>
-        </button>
-        <div class="nav__container">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--color">
-              <a class="nav__link nav__link--color nav__link--current nav__link--underline" href="#">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--color" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--color" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="nav nav--closed nav--nojs">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--color">
+            <a class="nav__link nav__link--color nav__link--current nav__link--underline" href="#">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--color" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--color" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
+      <button class="header__button" type="button">
+        <span class="header__button-name">открыть меню.</span>
+      </button>
     </div>
   </header>
   <main class="main">
     <h1 class="main__title">Магазин кошачего питания</h1>
     <section class="about">
       <div class="about__container container">
-        <h2 class="about__title">Функциональное</br>
+        <h2 class="about__title">Функциональное<br>
           питание для котов</h2>
         <p class="about__description">Занялся собой? Займись котом!</p>
         <img class="about__image" src="./img/index/about-image.png" width="280" height="270"
@@ -143,11 +138,15 @@
     </section>
   </main>
   <footer class="footer">
+    <iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
+        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Офис производителя питания для котов Cat Energy."></iframe>
     <div class="footer__container">
       <div class="contacts">
         <div class="contacts__container container">
           <h2 class="contacts__title">Наши контактные данные.</h2>
-          <p class="contacts__text">приглашаем</br> к сотрудничеству дилеров!</p>
+          <p class="contacts__text">приглашаем<br> к сотрудничеству дилеров!</p>
           <div class="contacts__adress-container">
             <span class="contacts__adress">ул. Большая
               Конюшенная, д. 19/8</span>
@@ -155,10 +154,6 @@
           </div>
         </div>
       </div>
-      <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
-        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Офис производителя питания для котов Cat Energy."></iframe>
     </div>
     <div class="social">
       <div class="social__container container">
@@ -200,7 +195,7 @@
           </li>
         </ul>
         <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -213,6 +208,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

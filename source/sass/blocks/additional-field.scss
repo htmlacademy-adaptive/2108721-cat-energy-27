@@ -12,6 +12,7 @@
 }
 
 .additional-field__title {
+  @include field-title;
   position: relative;
   padding: 11px 139px 34px 0;
 

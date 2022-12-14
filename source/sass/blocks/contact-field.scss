@@ -21,6 +21,7 @@
 }
 
 .contact-field__title {
+  @include field-title;
   padding: 26px 83px 7px 0;
 
   @media (min-width: $tablet-width) {
@@ -60,6 +61,7 @@
 }
 
 .contact-field__container {
+  @include field-container;
   gap: 10px;
 
   @media (min-width: $tablet-width) {

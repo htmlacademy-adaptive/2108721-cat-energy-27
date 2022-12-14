@@ -9,6 +9,7 @@
 }
 
 .comment-field__title {
+  @include field-title;
   position: relative;
   padding: 12px 160px 27px 0;
 

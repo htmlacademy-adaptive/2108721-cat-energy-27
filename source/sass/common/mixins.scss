@@ -138,3 +138,44 @@
   top: -39px;
   left: 113px;
 }
+
+@mixin field-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+@mixin field-title {
+  position: relative;
+  font-family: $font-large;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      @include title-line-left;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include title-line-left;
+      width: 70px;
+      left: -110px;
+    }
+  }
+}
+
+@mixin header-button {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/nav-open.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
