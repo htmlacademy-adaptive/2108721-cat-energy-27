@@ -74,7 +74,7 @@
   }
 }
 
-.products__image {
+.products__item-link {
   display: flex;
   align-self: center;
   justify-self: center;
@@ -97,7 +97,7 @@
   grid-row: 1/2;
   display: block;
   text-decoration: none;
-  padding-right: 64px;
+  padding-right: 66px;
   font-family: $font-large;
 
   @media (min-width: $tablet-width) {
@@ -149,6 +149,7 @@
 
 .products__item-name {
   display: grid;
+  grid-column: 2/3;
   grid-template-columns: repeat(2, 70px);
   font-family: $font-low;
   font-size: 12px;
@@ -156,6 +157,7 @@
   color: #444444;
   min-height: 53px;
   margin: 0;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 125px);

@@ -3,8 +3,8 @@
   padding: 25px 0 316px;
 
   @media (min-width: $tablet-width) {
-    background-color: inherit;
     padding: 43px 0 230px;
+    background: linear-gradient(to bottom, #ffffff 48%, #f2f2f2 48%);
   }
 
   @media (min-width: $desktop-width) {

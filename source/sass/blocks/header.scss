@@ -20,11 +20,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 93px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 540px;
+    justify-content: space-between;
   }
 }
 

@@ -18,7 +18,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 28px;
-    width: 570px;
+    width: 630px;
+    box-sizing: border-box;
   }
 }
 

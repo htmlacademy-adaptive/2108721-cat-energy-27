@@ -18,6 +18,7 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  order: -1;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -30,6 +31,7 @@
 
 .footer__map {
   border: none;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
