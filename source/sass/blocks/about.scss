@@ -13,7 +13,6 @@
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%,);
-    background-size: auto 694px;
     padding-top: 141px;
   }
 }
@@ -39,6 +38,7 @@
     width: 100%;
     height: 100%;
     background-image: url("../../img/index/about-back-image.png");
+    background-repeat: no-repeat;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {

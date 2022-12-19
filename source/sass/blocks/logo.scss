@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 57px;
+  text-align: start;
   padding: 5px 0;
+  gap: 55px;
   cursor: pointer;
   order: 2;
 
@@ -30,4 +31,8 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.logo__image-name {
+  padding-top: 6px;
 }

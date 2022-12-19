@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 0 316px;
+  padding: 25px 0 290px;
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 230px;
@@ -94,7 +94,7 @@
   grid-template-columns: repeat(2, 124px);
   margin: 0;
   gap: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 162px);
@@ -115,7 +115,7 @@
   flex-direction: column-reverse;
   align-items: center;
   text-align: center;
-  gap: 9px;
+  gap: 8px;
   padding-top: 15px;
 
   &:nth-child(2) {
@@ -150,6 +150,7 @@
   font-size: 12px;
   line-height: 12px;
   max-width: 77px;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -222,7 +223,7 @@
 }
 
 .example__cost {
-  margin-left: 3px;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

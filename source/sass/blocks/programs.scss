@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 30px 19px 22px;
+  padding: 30px 20px 18px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 53px;
@@ -52,8 +52,8 @@
     background-image: url("../../img/index/programs-cat.svg");
     width: 37px;
     height: 50px;
-    top: 19px;
-    left: 27px;
+    top: 21px;
+    left: 28px;
 
     @media (min-width: $tablet-width) {
       @include programs-picture-image;
@@ -79,8 +79,8 @@
     background-image: url("../../img/index/programs-cugar.svg");
     width: 68px;
     height: 29px;
-    top: 33px;
-    left: 11px;
+    top: 35px;
+    left: 12px;
 
     @media (min-width: $tablet-width) {
       @include programs-picture-image;
@@ -108,7 +108,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  padding-left: 72px;
+  padding-left: 71px;
   margin-bottom: 29px;
   font-weight: 400;
 
@@ -168,9 +168,9 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding: 5px 51px 5px 5px;
-  max-width: 150px;
-  box-sizing: border-box;
+  padding: 4px 0;
+  padding-right: 51px;
+  width: fit-content;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
