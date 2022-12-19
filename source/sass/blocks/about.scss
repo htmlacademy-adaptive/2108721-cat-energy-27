@@ -8,6 +8,13 @@
 
   @media (min-width: $tablet-width) {
     background: inherit;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%,);
+    background-size: auto 694px;
+    padding-top: 141px;
   }
 }
 
@@ -25,26 +32,19 @@
     align-items: flex-start;
   }
 
-  &::before {
-    @media (min-width: $desktop-width) {
-      position: absolute;
-      content: "";
-      width: 50%;
-      min-height: 697px;
-      background-color: rgba(104, 183, 56, 0.85);
-      top: -147px;
-      right: 0;
-    }
-  }
-
   &::after {
+    display: block;
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
     background-image: url("../../img/index/about-back-image.png");
     z-index: -1;
-    background-color: #3f3f42;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/about-back-image@2x.png");
+      background-size: 320px auto;
+    }
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -58,6 +58,11 @@
       background-repeat: no-repeat;
       top: -147px;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index/about-back-image-large@2x.png");
+        background-size: cover;
+      }
     }
   }
 }
@@ -108,30 +113,35 @@
 }
 
 .about__image {
-  display: inline;
+  display: block;
   padding-bottom: 3px;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    display: none;
-    // добавить новую картинку
+    position: absolute;
+    top: 240px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
-    // добавить новую картинку
+    top: 0;
+    right: 330px;
   }
 }
 
 .about__button {
   width: 100%;
-  padding: 7px 0;
-  text-align: center;
+  padding: 10px 5px;
+  line-height: 18px;
+  font-size: 14px;
+  min-height: 40px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 192px;
+    width: 244px;
     font-size: 20px;
     line-height: 20px;
-    padding: 17px 26px;
+    padding: 17px 5px;
     z-index: 1;
     margin-left: 87px;
     margin-bottom: 526px;

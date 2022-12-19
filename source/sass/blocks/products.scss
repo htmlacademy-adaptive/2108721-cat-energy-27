@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 1px 30px 40px 35px;
+    padding: 1px 38px 40px;
     background: linear-gradient(to bottom, #ffffff 13%, #f2f2f2 13%);
   }
 
@@ -83,12 +83,14 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    // добавить новые картинки
-    display: none;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    // добавить картинки
+.products__image {
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 34px;
   }
 }
 
@@ -109,7 +111,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 20px;
+    padding: 0 18px;
   }
 
   &:hover .products__title {
@@ -155,7 +157,6 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
-  min-height: 53px;
   margin: 0;
   align-items: center;
 

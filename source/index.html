@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header--position">
     <div class="header__container container">
       <a class="logo" href="#">
         <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
@@ -41,8 +42,12 @@
         <h2 class="about__title">Функциональное<br>
           питание для котов</h2>
         <p class="about__description">Занялся собой? Займись котом!</p>
-        <img class="about__image" src="./img/index/about-image.png" width="280" height="270"
-          alt="Банка кошачьего корма CAT ENERGY со вкусом курицы, 500г.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index/about-image-desk.png 1x, img/index/about-image-desk@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/index/about-image-tablet.png 1x, img/index/about-image-tablet@2x.png 2x" width="709" height="609">
+          <img class="about__image" src="./img/index/about-image.png" srcset="img/index/about-image@2x.png" width="280" height="270"
+            alt="Банка кошачьего корма CAT ENERGY со вкусом курицы, 500г.">
+        </picture>
         <a class="about__button button" href="form.html">подобрать программу</a>
       </div>
     </section>
@@ -70,7 +75,7 @@
       <div class="advantages__container container">
         <h2 class="advantages__title">Преимущества нашего продукта.</h2>
         <p class="advantages__about">Как это работает</p>
-        <ul class="advantages__list">
+        <ol class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__description">Функциональное питание
               содержит только полезные
@@ -93,7 +98,7 @@
             <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             <span class="advantages__number">4</span>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="example">
@@ -139,9 +144,9 @@
   </main>
   <footer class="footer">
     <iframe class="footer__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
-        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Офис производителя питания для котов Cat Energy."></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
+      width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      title="Офис производителя питания для котов Cat Energy."></iframe>
     <div class="footer__container">
       <div class="contacts">
         <div class="contacts__container container">

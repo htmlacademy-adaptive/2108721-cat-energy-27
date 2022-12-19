@@ -128,7 +128,7 @@
   }
 }
 
-.nav--nojs ~ .header__button {
+.nav--nojs + .header__button {
   display: none;
 }
 
