@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0 55px;
+    padding: 61px 0 55px;
   }
 }
 
@@ -72,10 +72,10 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    max-width: 162px;
-    justify-content: space-between;
-    gap: 26px;
+    gap: 27px;
     padding: 0;
+    margin-left: 25px;
+    width: auto;
   }
 
   &::after {

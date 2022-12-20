@@ -1,10 +1,10 @@
 .products {
   @media (min-width: $tablet-width) {
-    padding: 41px 0 34px;
+    padding: 150px 0 34px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 43px 0 41px;
+    padding: 49px 0 41px;
   }
 }
 
@@ -26,13 +26,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 141px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 62px;
+    row-gap: 143px;
   }
 }
 
@@ -40,28 +41,37 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 1fr 1fr 40px;
-  padding: 19px 0 27px;
-  box-sizing: border-box;
+  grid-template-rows: repeat(3, auto);
+  padding: 19px 0 25px;
+
+  & .products__item-description:nth-child(n+1):not(:nth-child(4)) {
+    margin-right: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
+
+  &:nth-child(odd) .products__image {
+    @media (min-width: $tablet-width) {
+      padding-top: 27px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px 37px 39px;
-    background: linear-gradient(to bottom, #ffffff 20%, #f2f2f2 20%);
-    min-height: 511px;
+    padding: 0 37px 39px;
+    background-color: #f2f2f2;
+    min-height: 430px;
     justify-content: flex-end;
     row-gap: 0;
-
-    &:nth-child(odd) > .products__image {
-      padding-top: 28px;
-    }
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     padding: 1px 38px 40px;
-    background: linear-gradient(to bottom, #ffffff 13%, #f2f2f2 13%);
   }
 
   &::after {
@@ -75,11 +85,10 @@
 
 .products__item-link {
   display: flex;
-  align-self: center;
   justify-self: center;
   grid-column: 1/2;
   grid-row: 1/3;
-  padding-top: 14px;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -90,7 +99,14 @@
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 34px;
+    position: absolute;
+    top: -72px;
+    left: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 17%;
+    top: -79px;
   }
 }
 
@@ -101,13 +117,13 @@
   text-decoration: none;
   padding-right: 66px;
   font-family: $font-large;
+  height: fit-content;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
     text-align: center;
-    padding: 0;
-    padding-left: 50px;
-    padding-right: 45px;
+    padding: 0 55px 0 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,6 +174,7 @@
   line-height: 16px;
   color: #444444;
   margin: 0;
+  margin-bottom: 22px;
   align-items: center;
   height: fit-content;
 
@@ -225,8 +242,10 @@
 
   @media (min-width: $tablet-width) {
     outline: 2px solid #f2f2f2;
-    padding: 161px 37px 38px;
+    padding: 5px 37px 38px;
     background: #ffffff;
+    height: 429px;
+    // как границу опустить
   }
 
   @media (min-width: $desktop-width) {
@@ -241,13 +260,13 @@
     width: 30px;
     height: 30px;
     top: 25px;
-    left: 119px;
+    left: 124px;
 
     @media (min-width: $tablet-width) {
-      background-size: 60px 60px;
+      background-image: url("../../img/catalog/more-plus-large.svg");
       width: 60px;
       height: 60px;
-      top: 52px;
+      top: 54px;
       left: 132px;
     }
 
@@ -263,6 +282,7 @@
   text-transform: uppercase;
   line-height: 20px;
   margin: 0;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -282,6 +302,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

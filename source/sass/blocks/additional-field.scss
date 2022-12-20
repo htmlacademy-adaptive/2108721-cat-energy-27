@@ -1,6 +1,6 @@
 .additional-field {
   @include font-form;
-  padding: 11px 0 24px;
+  padding: 11px 0 16px;
 
   @media (min-width: $tablet-width) {
     padding: 32px 0 27px;
@@ -14,18 +14,22 @@
 .additional-field__title {
   @include field-title;
   position: relative;
-  padding: 11px 139px 34px 0;
+  padding: 11px 139px 23px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 32px 440px 38px 0;
+    padding: 32px 440px 25px 0;
 
     &::before {
       bottom: 48px;
+
+      @media (min-width: $desktop-width) {
+        bottom: 37px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 32px 1008px 38px 0;
+    padding: 34px 1008px 25px 0;
   }
 
   &::after {
@@ -41,7 +45,7 @@
 
     @media (min-width: $desktop-width) {
       width: 1078px;
-      top: 53px;
+      top: 57px;
       right: -110px;
     }
   }
@@ -56,8 +60,8 @@
   gap: 13px;
   text-transform: uppercase;
   color: #000000;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -80,6 +84,14 @@
   display: flex;
   align-items: center;
   min-height: 30px;
+
+  &:nth-child(3) {
+    margin-left: 35px;
+  }
+
+  &:nth-child(4) {
+    margin-left: 92px;
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 40px;

@@ -61,6 +61,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-top: 4px;
     align-self: flex-start;
   }
 }
@@ -71,7 +72,11 @@
   z-index: 13;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
   }
 }
 
@@ -87,11 +92,14 @@
     text-align: end;
     padding: 0 40px;
     font-size: 16px;
+    height: fit-content;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 155px;
+    // max-width: 155px;
     text-align: start;
+    margin-left: 69px;
+    padding: 0 10px;
   }
 
   &:last-child {
@@ -99,5 +107,13 @@
       min-width: 0;
       width: 5px;
     }
+  }
+}
+
+.contacts__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

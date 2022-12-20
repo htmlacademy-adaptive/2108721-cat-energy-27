@@ -1,6 +1,6 @@
 .data-field {
   padding: 19px 0 24px;
-  gap: 14px;
+  gap: 12px;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
@@ -20,13 +20,20 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    width: 509px;
   }
 }
 
 .data-field__container {
   @include field-container;
   gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }
 
 .data-field__title {
@@ -37,9 +44,15 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 2px;
+    padding-left: 3px;
   }
 }
 
 .data-field__head-title {
   @include visually-hidden;
+}
+
+.data-field__input {
+  padding-left: 16px;
 }

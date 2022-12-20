@@ -136,7 +136,7 @@
   font-family: $font-large;
   color: #f2f2f2;
   top: -39px;
-  left: 113px;
+  left: 116px;
 }
 
 @mixin field-container {
@@ -166,7 +166,7 @@
     &::before {
       @include title-line-left;
       width: 70px;
-      left: -110px;
+      left: -108px;
     }
   }
 }

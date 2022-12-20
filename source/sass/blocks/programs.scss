@@ -175,6 +175,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0;
     padding-right: 57px;
     max-width: 180px;
   }
@@ -184,8 +185,8 @@
     background-image: url("../../img/index/programs-link-arrow.svg");
 
     @media (min-width: $tablet-width) {
-      left: 133px;
-      top: 15px;
+      left: 130px;
+      top: 9px;
     }
   }
 
@@ -194,8 +195,8 @@
     background-image: url("../../img/index/programs-link-arrow-large.svg");
 
     @media (min-width: $tablet-width) {
-      left: 133px;
-      top: 15px;
+      left: 130px;
+      top: 9px;
     }
   }
 
@@ -208,8 +209,8 @@
     background-image: url("../../img/index/programs-link-arrow-large.svg");
 
     @media (min-width: $tablet-width) {
-      left: 133px;
-      top: 15px;
+      left: 130px;
+      top: 9px;
     }
   }
 

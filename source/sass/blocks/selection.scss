@@ -10,7 +10,7 @@
 
 .selection__title {
   margin: 0;
-  padding: 10px 0 20px;
+  padding: 20px 0 20px;
   font-family: $font-large;
   font-size: 14px;
   line-height: 18px;
@@ -18,7 +18,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 33px;
+    padding: 27px 0 33px 2px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -52,6 +52,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    padding: 27px 4px 72px;
     gap: 64px;
   }
 
@@ -85,6 +86,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-bottom: 5px;
     font-size: 16px;
     max-width: 200px;
   }

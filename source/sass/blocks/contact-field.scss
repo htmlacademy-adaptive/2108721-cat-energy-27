@@ -1,7 +1,7 @@
 .contact-field {
   @include font-form;
   padding: 26px 0 12px;
-  row-gap: 14px;
+  row-gap: 12px;
   column-gap: 10px;
   text-transform: none;
   flex-direction: column;
@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 75px 0 33px;
+    row-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,36 +26,37 @@
   padding: 26px 83px 7px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 75px 120px 0 0;
+    padding: 74px 118px 0 2px;
 
     &::before {
       bottom: 12px;
+      left: -107px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 705px 76px 0;
+    padding: 67px 705px 5px 0;
 
     &::before {
-      bottom: 90px;
+      bottom: 18px;
     }
   }
 
   &::after {
     @include title-line;
     width: 99px;
-    top: 41px;
+    top: 42px;
     right: -20px;
 
     @media (min-width: $tablet-width) {
       width: 145px;
-      top: 99px;
+      top: 96px;
       right: -68px;
     }
 
     @media (min-width: $desktop-width) {
       width: 778px;
-      top: 91px;
+      top: 88px;
       right: -110px;
     }
   }
@@ -65,7 +67,16 @@
   gap: 10px;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    gap: 24px;
     width: 100%;
   }
+}
+
+.contact-field__name {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contact-field__input {
+  padding: 11px 19px 9px;
 }
