@@ -121,11 +121,15 @@
     position: absolute;
     top: 224px;
     padding: 0;
+    width: 709px;
+    min-height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     top: 0;
     right: 330px;
+    width: 552px;
+    min-height: 499px;
   }
 }
 

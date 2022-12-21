@@ -58,37 +58,3 @@
 .target-field__input {
   @include visually-hidden;
 }
-
-.radio__sort {
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-  cursor: pointer;
-  left: 0;
-  top: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 38px;
-    height: 38px;
-  }
-
-  &:hover {
-    border-color: #bababa;
-  }
-
-  &:focus::after {
-    position: absolute;
-    content: "";
-    width: 34px;
-    height: 34px;
-    outline: 2px solid #f06351;
-    top: -3px;
-    left: -3px;
-  }
-
-  &:focus-visible {
-    outline: none;
-  }
-}

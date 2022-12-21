@@ -10,7 +10,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 95px 765px 107px 110px;
+    position: absolute;
+    padding: 95px 0 107px;
+    width: fit-content;
   }
 }
 
@@ -37,6 +39,7 @@
     align-items: center;
     background-color: #ffffff;
     z-index: 5;
+    margin: 0;
   }
 }
 
