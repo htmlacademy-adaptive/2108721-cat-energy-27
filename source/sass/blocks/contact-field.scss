@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 75px 0 33px;
-    row-gap: 20px;
+    row-gap: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +23,7 @@
 
 .contact-field__title {
   @include field-title;
-  padding: 26px 83px 7px 0;
+  padding: 27px 83px 9px 0;
 
   @media (min-width: $tablet-width) {
     padding: 74px 118px 0 2px;
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 67px 705px 5px 0;
+    padding: 67px 705px 7px 0;
 
     &::before {
       bottom: 18px;
@@ -45,7 +45,7 @@
   &::after {
     @include title-line;
     width: 99px;
-    top: 42px;
+    top: 43px;
     right: -20px;
 
     @media (min-width: $tablet-width) {
@@ -64,19 +64,42 @@
 
 .contact-field__container {
   @include field-container;
+  position: relative;
   gap: 10px;
 
   @media (min-width: $tablet-width) {
-    gap: 24px;
+    gap: 23px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
   }
 }
 
 .contact-field__name {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .contact-field__input {
-  padding: 11px 19px 9px;
+  padding: 14px 46px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 18px;
+  }
 }

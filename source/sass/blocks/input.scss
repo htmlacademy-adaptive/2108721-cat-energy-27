@@ -50,8 +50,6 @@
 
 .input--email {
   border-color: #cdcdcd;
-  padding-top: 15px;
-  padding-left: 15px;
 
   &:hover {
     border-color: #e7e7e7;
@@ -65,13 +63,15 @@
 .input--email__image {
   position: absolute;
   content: "";
-  right: 20px;
+  right: 14px;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
 }
 
 .input--tel {
   border-color: #cdcdcd;
-  padding-left: 16px;
-  padding-top: 15px;
 
   &:hover {
     border-color: #e7e7e7;
@@ -81,5 +81,9 @@
 .input--tel__image {
   position: absolute;
   content: "";
-  right: 18px;
+  right: 16px;
+
+  @media (min-width: $tablet-width) {
+    right: 19px;
+  }
 }

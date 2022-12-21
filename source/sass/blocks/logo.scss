@@ -7,6 +7,7 @@
   gap: 55px;
   cursor: pointer;
   order: 2;
+  height: fit-content;
 
   &:hover {
     opacity: 0.8;
@@ -25,14 +26,21 @@
     width: 174px;
     height: 52px;
   }
-}
 
-.logo__image {
-  @media (min-width: $tablet-width) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 
+.logo__image {
+  transition: 1s;
+}
+
 .logo__image-name {
-  padding-top: 6px;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
