@@ -25,3 +25,11 @@
     }
   }
 }
+
+.check__name {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+}

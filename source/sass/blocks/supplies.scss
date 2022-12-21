@@ -1,6 +1,6 @@
 .supplies {
   @media (min-width: $tablet-width) {
-    padding: 34px 0 76px;
+    padding: 35px 0 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +19,7 @@
   font-family: $font-large;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     padding: 0 330px 80px 37px;
@@ -38,7 +39,7 @@
 
     @media (min-width: $tablet-width) {
       width: 328px;
-      top: 20px;
+      top: 22px;
       right: -30px;
     }
 
@@ -57,7 +58,7 @@
     &::after {
       @include title-line;
       width: 30px;
-      top: 20px;
+      top: 22px;
       left: -30px;
     }
   }
@@ -83,7 +84,6 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  gap: 14px;
   margin-bottom: 35px;
 
 
@@ -104,7 +104,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 13px 0 19px;
+  padding: 12px 0 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -125,8 +125,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
-    padding: 15px 0 17px;
+    justify-content: left;
+    padding: 15px 0 16px;
     width: 895px;
     gap: 0;
     border-top: 1px solid #cdcdcd;
@@ -173,9 +173,17 @@
   margin: 13px 0 15px;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 95px;
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 285px;
+    margin-right: 40px;
   }
 }
 
@@ -183,17 +191,31 @@
   max-width: 200px;
   align-self: center;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+  }
+
   @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-top: 2px;
     width: 243px;
   }
 }
 
 .supplies__product-description {
   align-self: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    margin-right: 3px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 82px;
+    display: flex;
     margin: 0;
+    width: 42px;
+    justify-content: flex-start;
   }
 }
 
@@ -224,13 +246,30 @@
   margin-bottom: 35px;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/supplies-image@2x.jpg");
+    background-size: 280px auto;
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: url("../../img/catalog/supplies-image-medium.jpg");
     margin: 0;
-    padding: 57px 124px 60px 77px;
+    padding: 57px 124px 63px 77px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/supplies-image-medium@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 43px 42px 41px;
+    background-image: url("../../img/catalog/supplies-image-big.jpg");
+    padding: 56px 38px 43px 40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/supplies-image-big@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 
   &::after {
@@ -247,11 +286,11 @@
 .supplies__gift-link {
   display: flex;
   flex-direction: column;
-  padding: 66px 60px 43px;
+  padding: 58px 61px 43px 58px;
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  gap: 40px;
+  gap: 48px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -261,7 +300,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
   }
 
   &:hover .supplies__gift-text {
@@ -292,9 +331,12 @@
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    padding-left: 11px;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    padding: 0;
   }
 }

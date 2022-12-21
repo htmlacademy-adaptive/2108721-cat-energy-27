@@ -1,9 +1,11 @@
 .header {
   position: relative;
-  padding: 5px 0 12px;
+  padding: 5px 0 11px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     padding: 24px 0 32px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,18 +13,26 @@
   }
 }
 
+.header--position {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    padding: 0;
+    top: 53px;
+    right: 0;
+    left: 0;
+  }
+}
+
 .header__container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    gap: 93px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 540px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -38,4 +48,54 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.header__button {
+  position: relative;
+  align-self: center;
+  margin-left: auto;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 20px;
+  order: 1;
+
+  &::before {
+    @include header-button;
+    background-image: url("../../img/nav-open.svg");
+    width: 24px;
+    height: 18px;
+  }
+
+  &::after {
+    @include header-button;
+    background-image: url("../../img/nav-close.svg");
+    width: 24px;
+    height: 20px;
+    left: 2px;
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid #68b738;
+    outline-offset: 5px;
+  }
+}
+
+.header__button-name {
+  @include visually-hidden;
 }

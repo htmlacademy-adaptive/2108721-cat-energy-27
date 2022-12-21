@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
-    padding: 25px 28px 29px;
+    padding: 24px 29px 25px;
   }
 
   &::after {
@@ -16,9 +16,10 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 25px 28px;
-    width: 570px;
+    width: 630px;
+    box-sizing: border-box;
   }
 }
 

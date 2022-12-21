@@ -18,6 +18,7 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  order: -1;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -25,5 +26,25 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+  }
+}
+
+.footer__map {
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+    top: 138px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
   }
 }

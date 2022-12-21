@@ -17,7 +17,7 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 20px;
+    padding: 10px 20px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -51,8 +51,10 @@
 .input--email {
   background-image: url("../../img/form/email-filed-image.svg");
   background-repeat: no-repeat;
-  background-position: right 16px top 16px;
+  background-position: right 15px top 17px;
   border-color: #cdcdcd;
+  padding-top: 15px;
+  padding-left: 15px;
 
   &:hover {
     border-color: #e7e7e7;
@@ -66,8 +68,10 @@
 .input--tel {
   background-image: url("../../img/form/tel-field-image.svg");
   background-repeat: no-repeat;
-  background-position: right 16px top 15px;
+  background-position: right 15px top 15px;
   border-color: #cdcdcd;
+  padding-left: 16px;
+  padding-top: 15px;
 
   &:hover {
     border-color: #e7e7e7;

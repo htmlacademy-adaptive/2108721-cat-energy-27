@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0 55px;
+    padding: 61px 0 55px;
   }
 }
 
@@ -68,14 +68,14 @@
   margin: 0;
   padding: 17px 0;
   list-style-type: none;
-  gap: 20px;
+  gap: 25px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    max-width: 162px;
-    justify-content: space-between;
-    gap: 26px;
+    gap: 27px;
     padding: 0;
+    margin-left: 25px;
+    width: auto;
   }
 
   &::after {
@@ -88,9 +88,19 @@
   }
 }
 
+.social__item {
+  &:nth-child(2) {
+    margin-right: 5px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 5px;
+  }
+}
+
 .social__link {
   display: flex;
-  padding: 5px;
+  padding: 5px 0;
   color: #666666;
 
   &:hover {

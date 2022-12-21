@@ -1,6 +1,6 @@
 .advantages {
   position: relative;
-  padding: 20px 0 49px;
+  padding: 20px 0 43px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 47px;
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 76px;
+    padding-bottom: 72px;
   }
 }
 
@@ -57,7 +57,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 247px);
-    column-gap: 153px;
+    column-gap: 136px;
     row-gap: 77px;
     padding: 72px 0 0;
   }
@@ -101,7 +101,7 @@
   line-height: 18px;
   margin: 0;
   padding-left: 80px;
-
+  // решить с br только в планшетнйо версии
   @media (min-width: $tablet-width) {
     padding: 111px 0 57px;
     padding-top: 111px;
@@ -120,6 +120,14 @@
 
   @media (min-width: $tablet-width) {
     @include advantages-number;
+    display: block;
+  }
+}
+
+.advantages__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }

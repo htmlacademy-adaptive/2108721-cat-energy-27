@@ -23,8 +23,8 @@
   content: "";
   height: 12px;
   width: 32px;
-  top: 7px;
-  left: 105px;
+  top: 6px;
+  right: 4px;
 }
 
 @mixin advantages-picture {
@@ -53,8 +53,8 @@
   background-position: center;
   width: 50px;
   height: 50px;
-  top: 22px;
-  left: 20px;
+  top: 24px;
+  left: 21px;
 
   @media (min-width: $tablet-width) {
     top: 92px;
@@ -136,5 +136,45 @@
   font-family: $font-large;
   color: #f2f2f2;
   top: -39px;
-  left: 113px;
+  left: 116px;
+}
+
+@mixin field-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+
+@mixin field-title {
+  position: relative;
+  font-family: $font-large;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      @include title-line-left;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      @include title-line-left;
+      width: 70px;
+      left: -108px;
+    }
+  }
+}
+
+@mixin header-button {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  top: 3px;
+  left: 0;
 }
