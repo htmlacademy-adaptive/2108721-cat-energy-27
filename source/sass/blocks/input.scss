@@ -42,6 +42,10 @@
   &:invalid:not(:placeholder-shown) {
     outline: 2px solid #ff8282;
   }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 .input--age {
@@ -55,8 +59,12 @@
     border-color: #e7e7e7;
   }
 
-  &:focus + .input--email__image {
-    stroke: #68b738;
+  &:focus ~ .input--email__image {
+    color: #68b738;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .input--email__image {
+    color: #ff8282;
   }
 }
 
@@ -75,6 +83,14 @@
 
   &:hover {
     border-color: #e7e7e7;
+  }
+
+  &:focus ~ .input--tel__image {
+    color: #68b738;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .input--tel__image {
+    color: #ff8282;
   }
 }
 

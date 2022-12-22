@@ -105,4 +105,9 @@
 
 .additional-field__input {
   @include visually-hidden;
+
+  &:disabled ~ span {
+    opacity: 30%;
+    cursor: auto;
+  }
 }

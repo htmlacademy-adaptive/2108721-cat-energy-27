@@ -50,4 +50,8 @@
   &:focus-visible {
     outline: none;
   }
+
+  &:disabled + .radio__name {
+    opacity: 30%;
+  }
 }
