@@ -23,3 +23,35 @@
     }
   }
 }
+
+.radio__sort {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 38px;
+    height: 38px;
+  }
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:focus {
+    border-color: #f06351;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled + .radio__name {
+    opacity: 30%;
+  }
+}

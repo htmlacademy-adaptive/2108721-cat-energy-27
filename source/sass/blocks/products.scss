@@ -1,4 +1,6 @@
 .products {
+  transition: 1s;
+
   @media (min-width: $tablet-width) {
     padding: 150px 0 34px;
   }
@@ -96,6 +98,7 @@
 }
 
 .products__image {
+  transition: 1s;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {

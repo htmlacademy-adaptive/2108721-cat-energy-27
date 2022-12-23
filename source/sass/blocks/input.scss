@@ -15,6 +15,7 @@
   padding: 13px 20px;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
+  border-radius: 0;
 
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
@@ -31,8 +32,7 @@
   }
 
   &:focus {
-    border-color: #444444;
-    border-radius: 0;
+    outline: 2px solid #444444;
   }
 
   &:focus-visible {
@@ -40,7 +40,11 @@
   }
 
   &:invalid:not(:placeholder-shown) {
-    border-color: #ff8282;
+    outline: 2px solid #ff8282;
+  }
+
+  &:disabled {
+    opacity: 30%;
   }
 }
 
@@ -49,35 +53,53 @@
 }
 
 .input--email {
-  background-image: url("../../img/form/email-filed-image.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px top 17px;
   border-color: #cdcdcd;
-  padding-top: 15px;
-  padding-left: 15px;
 
   &:hover {
     border-color: #e7e7e7;
   }
 
+  &:focus ~ .input--email__image {
+    color: #68b738;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .input--email__image {
+    color: #ff8282;
+  }
+}
+
+.input--email__image {
+  position: absolute;
+  content: "";
+  right: 14px;
+
   @media (min-width: $tablet-width) {
-    background-position: right 19px top 19px;
+    right: 20px;
   }
 }
 
 .input--tel {
-  background-image: url("../../img/form/tel-field-image.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px top 15px;
   border-color: #cdcdcd;
-  padding-left: 16px;
-  padding-top: 15px;
 
   &:hover {
     border-color: #e7e7e7;
   }
 
+  &:focus ~ .input--tel__image {
+    color: #68b738;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .input--tel__image {
+    color: #ff8282;
+  }
+}
+
+.input--tel__image {
+  position: absolute;
+  content: "";
+  right: 16px;
+
   @media (min-width: $tablet-width) {
-    background-position: right 19px top 19px;
+    right: 19px;
   }
 }

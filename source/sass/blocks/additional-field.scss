@@ -1,6 +1,6 @@
 .additional-field {
   @include font-form;
-  padding: 11px 0 16px;
+  padding: 11px 0 19px;
 
   @media (min-width: $tablet-width) {
     padding: 32px 0 27px;
@@ -17,10 +17,10 @@
   padding: 11px 139px 23px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 32px 440px 25px 0;
+    padding: 56px 440px 25px 2px;
 
     &::before {
-      bottom: 48px;
+      bottom: 37px;
 
       @media (min-width: $desktop-width) {
         bottom: 37px;
@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 34px 1008px 25px 0;
+    padding: 57px 1008px 25px 0;
   }
 
   &::after {
@@ -40,12 +40,13 @@
 
     @media (min-width: $tablet-width) {
       width: 446px;
-      top: 55px;
+      top: 78px;
+      right: -47px;
     }
 
     @media (min-width: $desktop-width) {
       width: 1078px;
-      top: 57px;
+      top: 80px;
       right: -110px;
     }
   }
@@ -57,7 +58,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  gap: 13px;
+  gap: 12px;
   text-transform: uppercase;
   color: #000000;
   font-size: 16px;
@@ -86,11 +87,15 @@
   min-height: 30px;
 
   &:nth-child(3) {
-    margin-left: 35px;
+    @media (min-width: $desktop-width) {
+      margin-left: 35px;
+    }
   }
 
   &:nth-child(4) {
-    margin-left: 92px;
+    @media (min-width: $desktop-width) {
+      margin-left: 92px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -100,33 +105,9 @@
 
 .additional-field__input {
   @include visually-hidden;
-}
 
-.check__sort {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 30px;
-  border: 1px solid #cdcdcd;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
-    top: 0;
-  }
-
-  &:hover {
-    border-color: #bababa;
-  }
-
-  &:focus {
-    border-color: #f06351;
-  }
-
-  &:focus-visible {
-    outline: none;
+  &:disabled ~ span {
+    opacity: 30%;
+    cursor: auto;
   }
 }

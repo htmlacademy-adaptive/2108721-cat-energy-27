@@ -157,6 +157,11 @@
 .nav--opened .nav__list {
   position: absolute;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+  }
 }
 
 .nav--closed ~ .header__button::after {

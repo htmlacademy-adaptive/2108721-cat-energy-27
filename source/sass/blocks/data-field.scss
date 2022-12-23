@@ -47,12 +47,12 @@
     padding-bottom: 2px;
     padding-left: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .data-field__head-title {
   @include visually-hidden;
-}
-
-.data-field__input {
-  padding-left: 16px;
 }

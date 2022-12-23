@@ -6,15 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="icon" href="/favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="/manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="header header--position">
     <div class="header__container container">
       <a class="logo" href="#">
-        <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
-          alt="Кот в маске Бэтмена показывает язык.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" width="174" height="52">
+          <img class="logo__image" src="./img/logo-cat.svg" width="34" height="38"
+            alt="Кот в маске Бэтмена показывает язык.">
+        </picture>
         <img class="logo__image-name" src="./img/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
       </a>
       <nav class="nav nav--nojs">
@@ -98,7 +105,8 @@
             <span class="advantages__number">3</span>
           </li>
           <li class="advantages__item">
-            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br class="advantages__br"> вашего питомца!
+            <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему<br
+                class="advantages__br"> вашего питомца!
             </p>
             <span class="advantages__number">4</span>
           </li>
@@ -141,7 +149,8 @@
               <source media="(min-width: 768px)"
                 srcset="img/index/example-cat-before-tablet.png 1x, img/index/example-cat-before-tablet@2x.png 2x"
                 width="560" height="512">
-              <img class="example__image-before" src="./img/index/example-cat-before.png" srcset="./img/index/example-cat-before@2x.png" width="280" height="256"
+              <img class="example__image-before" src="./img/index/example-cat-before.png"
+                srcset="./img/index/example-cat-before@2x.png" width="280" height="256"
                 alt="Кот, до похудения, толстый.">
             </picture>
           </div>
@@ -153,11 +162,16 @@
               <source media="(min-width: 768px)"
                 srcset="img/index/example-cat-after-tablet.png 1x, img/index/example-cat-after-tablet@2x.png 2x"
                 width="560" height="512">
-              <img class="example__image-after" src="./img/index/example-cat-after.png" srcset="./img/index/example-cat-after@2x.png" width="280" height="256"
+              <img class="example__image-after" src="./img/index/example-cat-after.png"
+                srcset="./img/index/example-cat-after@2x.png" width="280" height="256"
                 alt="Кот, после похудения, стройный.">
             </picture>
           </div>
-          <button class="example__image-button" type="button"></button>
+          <button class="example__image-button" type="button">
+            <svg class="example__image-slider" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="управление слайдером с изображениеми котов.">
+              <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" fill="currentColor"></path>
+            </svg>
+          </button>
         </div>
       </div>
     </section>

@@ -30,6 +30,39 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 2px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.check__sort {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
+
+  &:hover {
+    border-color: #bababa;
+  }
+
+  &:focus {
+    border-color: #f06351;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 }

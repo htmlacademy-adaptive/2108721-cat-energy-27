@@ -5,6 +5,7 @@
   text-align: center;
   background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, #ffffff 60%);
   padding-bottom: 20px;
+  transition: 0.5s;
 
   @media (min-width: $tablet-width) {
     background: inherit;
@@ -14,6 +15,7 @@
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%,);
     padding-top: 141px;
+    padding-bottom: 2px;
   }
 }
 
@@ -116,16 +118,21 @@
   display: block;
   padding-bottom: 3px;
   background-color: transparent;
+  transition: 1s;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 224px;
     padding: 0;
+    width: 709px;
+    min-height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     top: 0;
     right: 330px;
+    width: 552px;
+    min-height: 499px;
   }
 }
 
