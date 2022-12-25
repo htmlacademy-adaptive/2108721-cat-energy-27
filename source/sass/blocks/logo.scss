@@ -35,10 +35,14 @@
 
 .logo__image {
   transition: 1s;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .logo__image-name {
-  padding-top: 2px;
+  padding-top: 5px;
 
   @media (min-width: $tablet-width) {
     display: none;

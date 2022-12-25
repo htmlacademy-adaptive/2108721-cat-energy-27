@@ -9,6 +9,7 @@
 
   &::after {
     @include large-divider;
+    left: -20px;
     background-color: #d9d9d9;
 
     @media (min-width: $tablet-width) {
@@ -18,7 +19,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 25px 28px;
-    width: 630px;
+    width: 50%;
     box-sizing: border-box;
   }
 }

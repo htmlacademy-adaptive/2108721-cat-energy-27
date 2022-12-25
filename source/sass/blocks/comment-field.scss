@@ -12,6 +12,8 @@
   @include field-title;
   position: relative;
   padding: 11px 160px 25px 0;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 31px 454px 43px 1px;
@@ -40,7 +42,7 @@
     @media (min-width: $desktop-width) {
       width: 1108px;
       top: 57px;
-      right: -111px;
+      right: -109px;
     }
   }
 }

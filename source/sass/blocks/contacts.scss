@@ -6,13 +6,15 @@
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 56px;
+    padding: 60px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    padding: 95px 110px 107px;
-    width: fit-content;
+    flex-direction: row;
+    padding: 95px 0 107px 110px;
+    max-width: 565px;
+    justify-self: flex-start;
   }
 }
 
@@ -35,11 +37,12 @@
     padding: 56px 80px 38px;
     width: 565px;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #ffffff;
     z-index: 5;
     margin: 0;
+    min-width: 0;
   }
 }
 
@@ -75,7 +78,7 @@
   z-index: 13;
 
   @media (min-width: $tablet-width) {
-    gap: 15px;
+    gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,7 +102,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // max-width: 155px;
     text-align: start;
     margin-left: 69px;
     padding: 0 10px;

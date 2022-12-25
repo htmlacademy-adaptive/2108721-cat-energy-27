@@ -15,6 +15,8 @@
   @include field-title;
   position: relative;
   padding: 11px 139px 23px 0;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 56px 440px 25px 2px;
@@ -34,7 +36,7 @@
 
   &::after {
     @include title-line;
-    width: 136px;
+    min-width: 136px;
     top: 26px;
     right: -20px;
 
@@ -47,7 +49,7 @@
     @media (min-width: $desktop-width) {
       width: 1078px;
       top: 80px;
-      right: -110px;
+      right: -109px;
     }
   }
 }
@@ -66,7 +68,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 282px);
+    grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+    // не работает колонки
     column-gap: 64px;
     row-gap: 32px;
   }

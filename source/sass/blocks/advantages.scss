@@ -56,15 +56,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 247px);
-    column-gap: 136px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
     row-gap: 77px;
     padding: 72px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 77px;
     padding: 0;
   }
@@ -93,6 +93,10 @@
     @include advantages-picture();
     background-image: url("../../img/index/advantages-alarm.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+  }
 }
 
 .advantages__description {
@@ -101,7 +105,7 @@
   line-height: 18px;
   margin: 0;
   padding-left: 80px;
-  // решить с br только в планшетнйо версии
+
   @media (min-width: $tablet-width) {
     padding: 111px 0 57px;
     padding-top: 111px;

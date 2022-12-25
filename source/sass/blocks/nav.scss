@@ -1,7 +1,11 @@
 .nav {
-  position: relative;
   display: flex;
   order: 3;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .nav__list {
@@ -12,7 +16,8 @@
   list-style-type: none;
   z-index: 2;
   top: 60px;
-  left: -20px;
+  left: 0;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -34,10 +39,10 @@
   margin: 0;
   background-color: #ffffff;
   height: 66px;
-  width: 320px;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    min-width: auto;
     height: auto;
     border: none;
 

@@ -1,6 +1,6 @@
 .contact-field {
   @include font-form;
-  padding: 26px 0 12px;
+  padding: 26px 0 11px;
   row-gap: 12px;
   column-gap: 10px;
   text-transform: none;
@@ -23,7 +23,9 @@
 
 .contact-field__title {
   @include field-title;
-  padding: 27px 83px 9px 0;
+  padding: 27px 83px 10px 0;
+  width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 74px 118px 0 2px;
@@ -57,7 +59,7 @@
     @media (min-width: $desktop-width) {
       width: 778px;
       top: 88px;
-      right: -110px;
+      right: -109px;
     }
   }
 }
@@ -93,7 +95,7 @@
 }
 
 .contact-field__input {
-  padding: 14px 46px 13px 15px;
+  padding: 14px 43px 13px 15px;
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
