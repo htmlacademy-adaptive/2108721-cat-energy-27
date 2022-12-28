@@ -6,7 +6,7 @@
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 60px;
+    padding: 56px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,12 +63,14 @@
     padding: 0 40px;
     font-size: 20px;
     line-height: 26px;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 4px;
     align-self: flex-start;
+    margin-top: 0;
   }
 }
 
@@ -78,7 +80,7 @@
   z-index: 13;
 
   @media (min-width: $tablet-width) {
-    gap: 16px;
+    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +100,6 @@
     text-align: end;
     padding: 0 40px;
     font-size: 16px;
-    height: fit-content;
   }
 
   @media (min-width: $desktop-width) {

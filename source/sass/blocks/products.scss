@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 49px 0 41px;
+    padding: 61px 0 41px;
   }
 }
 
@@ -60,14 +60,43 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 24px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 45px;
+    }
   }
 
   &:nth-child(odd) .products__image {
     padding-top: 12px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 25px;
+      padding-top: 27px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &:first-child .products__image {
+    padding-top: 0;
+    padding-bottom: 9px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &:nth-child(3) .products__image {
+    padding-top: 9px;
+  }
+
+  &:nth-child(5) .products__image {
+    padding-top: 15px;
+  }
+
+  &:nth-child(7) .products__image {
+    padding-top: 9px;
   }
 
   @media (min-width: $tablet-width) {
@@ -83,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 1px 38px 40px;
+    padding: 1px 39px 40px 41px;
     min-width: 245px;
   }
 
@@ -131,6 +160,7 @@
   @media (min-width: $desktop-width) {
     left: 17%;
     top: -79px;
+    margin-bottom: 43px;
   }
 }
 
@@ -154,7 +184,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 7px;
+    padding: 0 6px;
     max-width: 145px;
   }
 
@@ -190,6 +220,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
+    padding-left: 2px;
   }
 }
 
@@ -289,13 +320,15 @@
     width: 30px;
     height: 30px;
     top: 26px;
+    left: 50%;
+    transform: translateX(-15px);
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/catalog/more-plus-large.svg");
       width: 60px;
       height: 60px;
-      top: 54px;
-      left: unset;
+      top: 53px;
+      transform: translateX(-30px);
     }
 
     @media (min-width: $desktop-width) {

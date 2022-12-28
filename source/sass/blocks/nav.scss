@@ -53,6 +53,10 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+
+    &:nth-child(2) {
+      margin-right: 2px;
+    }
   }
 
   &:first-child {
@@ -87,6 +91,8 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 1px;
+    padding-bottom: 3px;
   }
 
   &--current::after {
@@ -95,8 +101,12 @@
     width: 100%;
     height: 2px;
     background-color: #68b738;
-    bottom: 2px;
+    bottom: 3px;
     right: 0;
+
+    @media (min-width: $desktop-width) {
+      bottom: -5px;
+    }
   }
 
   &--color {
@@ -130,7 +140,7 @@
     width: 100%;
     height: 2px;
     background-color: #ffffff;
-    bottom: 0;
+    bottom: -4px;
     right: 0;
   }
 }

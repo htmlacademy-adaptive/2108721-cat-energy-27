@@ -4,7 +4,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 86px;
+    padding-bottom: 85px;
   }
 }
 
@@ -12,53 +12,73 @@
   margin: 0 auto;
 }
 
+.supplies__text-container {
+  min-width: fit-content;
+  padding-right: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+  }
+}
+
 .supplies__title {
   position: relative;
-  padding: 25px 53px 36px 0;
+  padding: 26px 0 36px 0;
   margin: 0;
   font-family: $font-large;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::before {
+    position: static;
+    content: "";
+    height: 2px;
+    background-color: #68b738;
+    width: 100%;
+    margin-top: 15px;
+    margin-right: -20px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 21px;
+      margin-right: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: -110px;
+      margin-top: 23px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 330px 79px 37px;
+    padding: 0 0 79px 37px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 870px 81px 0;
-  }
-
-  &::before {
-    @include title-line;
-    width: 53px;
-    top: 40px;
-    right: -20px;
-
-    @media (min-width: $tablet-width) {
-      width: 328px;
-      top: 22px;
-      right: -30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 957px;
-      right: -110px;
-    }
+    padding: 0 0 81px 0;
   }
 
   &::after {
     @include small-divider;
     background-color: #cdcdcd;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
     &::after {
       @include title-line;
       width: 30px;
-      top: 22px;
+      top: 23px;
       left: -30px;
     }
   }
@@ -84,7 +104,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
 
   @media (min-width: $tablet-width) {
@@ -252,7 +272,7 @@
     background-image: url("../../img/catalog/supplies-image-medium.jpg");
     background-size: cover;
     margin: 0;
-    padding: 57px 124px 63px 77px;
+    padding: 57px 123px 63px 77px;
     min-height: 200px;
     box-sizing: border-box;
 
@@ -319,6 +339,7 @@
 
 .supplies__gift-icon {
   z-index: 2;
+  padding-left: 2px;
 }
 
 .supplies__gift-text {

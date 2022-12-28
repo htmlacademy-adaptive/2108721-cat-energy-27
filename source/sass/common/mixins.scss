@@ -99,10 +99,10 @@
 }
 
 @mixin title-line {
-  position: absolute;
   content: "";
   height: 2px;
   background-color: #68b738;
+  width: 100%;
 }
 
 @mixin title-line-left {
@@ -175,4 +175,12 @@
   background-repeat: no-repeat;
   top: 3px;
   left: 0;
+}
+
+@mixin divider-container {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
 }
