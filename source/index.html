@@ -10,6 +10,9 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -50,6 +53,8 @@
           питание для котов</h2>
         <p class="about__description">Занялся собой? Займись котом!</p>
         <picture>
+          <source media="(min-width: 1440px)" type="image/webp" srcset="img/index/about-image-desk.webp 1x, img/index/about-image-desk@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/index/about-image-tablet.webp 1x, img/index/about-image-tablet@2x.webp 2x">
           <source type="image/webp" srcset="./img/index/about-image.webp 1x, img/index/about-image@2x.webp 2x">
           <source media="(min-width: 1440px)"
             srcset="img/index/about-image-desk.png 1x, img/index/about-image-desk@2x.png 2x" width="552" height="499">
@@ -144,6 +149,9 @@
         <div class="example__image-container">
           <div class="example__image-block">
             <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/index/example-cat-before-tablet.webp 1x, img/index/example-cat-before-tablet@2x.webp 2x" width="560" height="512">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/index/example-cat-before-tablet.webp 1x, img/index/example-cat-before-tablet@2x.webp 2x"  width="560" height="512">
+              <source type="image/webp" srcset="img/index/example-cat-before.webp 1x, img/index/example-cat-before@2x.webp 2x">
               <source media="(min-width: 1440px)"
                 srcset="img/index/example-cat-before-tablet.png 1x, img/index/example-cat-before-tablet@2x.png 2x"
                 width="560" height="512">
@@ -157,6 +165,9 @@
           </div>
           <div class="example__image-block">
             <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/index/example-cat-after-tablet.webp 1x, img/index/example-cat-after-tablet@2x.webp 2x" width="560" height="512">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/index/example-cat-after-tablet.webp 1x, img/index/example-cat-after-tablet@2x.webp 2x"  width="560" height="512">
+              <source type="image/webp" srcset="img/index/example-cat-after.webp 1x, img/index/example-cat-after@2x.webp 2x">
               <source media="(min-width: 1440px)"
                 srcset="img/index/example-cat-after-tablet.png 1x, img/index/example-cat-after-tablet@2x.png 2x"
                 width="560" height="512">
@@ -205,31 +216,35 @@
         </div>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <svg class="social__image" width="27" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__link social__link--vkontakte" href="#" aria-label="Мы вконтакте.">
+              <svg class="social__image" width="27" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                alt="Мы вконтакте.">
                 <use href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <svg class="social__image" width="24" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе.">
+              <svg class="social__image" width="24" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                alt="Мы в ютубе.">
                 <use href="img/sprite.svg#youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">
-              <svg class="social__image" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__link social__link--telegram" href="#" aria-label="Мы телеграме.">
+              <svg class="social__image" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                alt="Мы в телеграме.">
                 <use href="img/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy сайт.">
             <p class="copyright__text">HTML Academy</p>
-            <svg class="copyright__logo" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="copyright__logo" width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"
+              alt="HTML Academy сайт.">
               <use href="img/sprite.svg#dev-logo"></use>
             </svg>
           </a>

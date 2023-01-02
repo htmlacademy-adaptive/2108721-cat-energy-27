@@ -31,12 +31,8 @@
     border-color: #cdcdcd;
   }
 
-  &:focus {
-    outline: 2px solid #444444;
-  }
-
   &:focus-visible {
-    outline: none;
+    outline: 2px solid #444444;
   }
 
   &:invalid:not(:placeholder-shown) {

@@ -39,12 +39,12 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-image: url("../../img/index/about-back-image.png");
+    background-image: url("../../img/index/about-back-image.webp");
     background-repeat: no-repeat;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/about-back-image@2x.png");
+      background-image: url("../../img/index/about-back-image@2x.webp");
       background-size: 320px auto;
     }
 
@@ -54,7 +54,7 @@
 
     @media (min-width: $desktop-width) {
       display: block;
-      background-image: url("../../img/index/about-back-image-large.png");
+      background-image: url("../../img/index/about-back-image-large.webp");
       width: 50%;
       height: 694px;
       background-repeat: no-repeat;
@@ -62,7 +62,7 @@
       right: 0;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/index/about-back-image-large@2x.png");
+        background-image: url("../../img/index/about-back-image-large@2x.webp");
         background-size: cover;
       }
     }
