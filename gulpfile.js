@@ -3,14 +3,16 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
-import csso from 'gulp-postcss';
+import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
+import squoosh from 'gulp-libsquoosh';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true }) //1. style.less найден файл
     .pipe(plumber()) // 2. в файле обрабатываются ошибки
     .pipe(sass().on('error', sass.logError)) // style.sass --> style.css
@@ -24,11 +26,25 @@ export const styles = () => {
 }
 
 // HTML
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: true })) // удаляет пробелы
   .pipe(gulp.dest('build'));
 }
+
+// Scripts
+const script = () => {
+  return gulp.src('source/js/*.js')
+  .pipe (terser())
+  .pipe (gulp.dest('build/js'))
+}
+
+// // images
+// export const images = () => {
+//   return gulp.src('source/img/**/*.{jpg,png}')
+//   .pipe(squoosh)
+//   .pipe(gulp.dest('build/img'))
+// }
 
 // Server
 
@@ -53,5 +69,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  html, script, styles, server, watcher
 );
