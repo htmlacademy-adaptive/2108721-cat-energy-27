@@ -79,7 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
+    gap: 19px;
   }
 }
 
@@ -99,17 +99,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    // max-width: 155px;
+    max-width: auto;
     text-align: start;
-    margin-left: 69px;
-    padding: 0 10px;
-  }
-
-  &:last-child {
-    @media (min-width: $desktop-width) {
-      min-width: 0;
-      width: 5px;
-    }
+    margin-left: 60px;
+    padding: 0;
+    padding-left: 10px;
   }
 }
 
