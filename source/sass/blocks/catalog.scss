@@ -3,28 +3,37 @@
 }
 
 .catalog__title {
+  position: relative;
   font-family: $font-large;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  padding: 26px 20px 41px;
-  margin: 0 auto;
-  border-bottom: 1px solid #ebebeb;
-  max-width: 280px;
-
+  padding: 27px 20px 40px;
+  width: auto;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 24px 30px 11px;
     font-size: 60px;
     line-height: 60px;
     border: none;
-    max-width: 708px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 42px 110px 115px;
+    padding: 36px 110px 105px;
     font-size: 60px;
     line-height: 60px;
     max-width: 1220px;
+  }
+
+  &::before {
+    @include small-divider;
+    top: -2px;
+    bottom: unset;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

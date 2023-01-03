@@ -8,13 +8,28 @@
   }
 }
 
-.comment-field__title {
-  @include field-title;
-  position: relative;
-  padding: 11px 160px 25px 0;
+.comment-field__text {
+  min-width: fit-content;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 31px 454px 43px 1px;
+    padding-right: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.comment-field__title {
+  @include field-title;
+  display: flex;
+  padding: 13px 0 25px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 43px 1px;
 
     &::before {
       bottom: 55px;
@@ -22,25 +37,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 35px 1038px 43px 0;
+    padding: 33px 0 43px 0;
   }
 
   &::after {
     @include title-line;
-    width: 157px;
-    top: 26px;
-    right: -20px;
+    margin-right: -20px;
+    margin-top: 15px;
 
     @media (min-width: $tablet-width) {
-      width: 478px;
-      top: 53px;
-      right: -65px;
+      margin-top: 10px;
+      margin-right: -67px;
+      align-self: center;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1108px;
-      top: 57px;
-      right: -111px;
+      margin-right: -110px;
     }
   }
 }
@@ -52,6 +64,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 9px 21px;
+    min-height: 174px;
   }
 
   @media (min-width: $desktop-width) {

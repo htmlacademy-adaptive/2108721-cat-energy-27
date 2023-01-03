@@ -11,13 +11,28 @@
   }
 }
 
-.additional-field__title {
-  @include field-title;
-  position: relative;
-  padding: 11px 139px 23px 0;
+.additional-field__text {
+  min-width: fit-content;
+  padding-right: 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 440px 25px 2px;
+    padding-right: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.additional-field__title {
+  @include field-title;
+  display: flex;
+  padding: 11px 0 23px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 0 25px 2px;
 
     &::before {
       bottom: 37px;
@@ -29,25 +44,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 1008px 25px 0;
+    padding: 34px 0 25px 0;
   }
 
   &::after {
     @include title-line;
-    width: 136px;
-    top: 26px;
-    right: -20px;
+    margin-right: -20px;
+    margin-top: 15px;
 
     @media (min-width: $tablet-width) {
-      width: 446px;
-      top: 78px;
-      right: -47px;
+      margin-top: 10px;
+      margin-right: -67px;
+      align-self: center;
     }
 
     @media (min-width: $desktop-width) {
-      width: 1078px;
-      top: 80px;
-      right: -110px;
+      margin-right: -110px;
     }
   }
 }
@@ -66,8 +78,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 282px);
-    column-gap: 64px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+    column-gap: 61px;
     row-gap: 32px;
   }
 

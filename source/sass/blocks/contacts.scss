@@ -6,13 +6,15 @@
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 56px;
+    padding: 56px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    padding: 95px 110px 107px;
-    width: fit-content;
+    flex-direction: row;
+    padding: 95px 0 107px 110px;
+    max-width: 565px;
+    justify-self: flex-start;
   }
 }
 
@@ -35,11 +37,12 @@
     padding: 56px 80px 38px;
     width: 565px;
     box-sizing: border-box;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #ffffff;
     z-index: 5;
     margin: 0;
+    min-width: 0;
   }
 }
 
@@ -60,12 +63,14 @@
     padding: 0 40px;
     font-size: 20px;
     line-height: 26px;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 4px;
     align-self: flex-start;
+    margin-top: 0;
   }
 }
 
@@ -75,7 +80,7 @@
   z-index: 13;
 
   @media (min-width: $tablet-width) {
-    gap: 15px;
+    gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,11 +100,13 @@
     text-align: end;
     padding: 0 40px;
     font-size: 16px;
-    height: fit-content;
   }
 
   @media (min-width: $desktop-width) {
+<<<<<<< HEAD
     max-width: auto;
+=======
+>>>>>>> gum-site
     text-align: start;
     margin-left: 60px;
     padding: 0;
