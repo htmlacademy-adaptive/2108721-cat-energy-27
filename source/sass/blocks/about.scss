@@ -37,26 +37,17 @@
     position: absolute;
     content: "";
     width: 100%;
-<<<<<<< HEAD
     height: 100%;
     background-image: url("../../img/index/about-back-image.webp");
-=======
     min-height: 302px;
-    background-image: url("../../img/index/about-back-image.png");
->>>>>>> gum-site
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     top: 0;
 
     @media (min-resolution: 2dppx) {
-<<<<<<< HEAD
       background-image: url("../../img/index/about-back-image@2x.webp");
-      background-size: 320px auto;
-=======
-      background-image: url("../../img/index/about-back-image@2x.png");
       background-size: cover;
->>>>>>> gum-site
     }
 
     @media (min-width: $tablet-width) {
@@ -67,7 +58,7 @@
       display: block;
       background-image: url("../../img/index/about-back-image-large.webp");
       width: 50%;
-      height: 694px;
+      min-height: 694px;
       background-repeat: no-repeat;
       top: -141px;
       right: 0;
