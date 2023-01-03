@@ -36,7 +36,7 @@ const html = () => {
 }
 
 // Scripts
-const Scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe (terser())
   .pipe (gulp.dest('build/js'))
@@ -121,7 +121,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html', gulp.series(html, reload));
-  gulp.watch('source/js/script.js', gulp.series(Scripts));
+  gulp.watch('source/js/script.js', gulp.series(scripts));
 }
 
 //Build
@@ -132,7 +132,7 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
-    Scripts,
+    scripts,
     svg,
     sprite,
     createWebp
@@ -147,7 +147,8 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
-    html,Scripts,
+    html,
+    scripts,
     svg,
     sprite,
     createWebp
