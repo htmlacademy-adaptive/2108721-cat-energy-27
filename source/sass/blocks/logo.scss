@@ -30,15 +30,25 @@
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
+    padding-top: 2px;
   }
 }
 
 .logo__image {
   transition: 1s;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    padding-top: 2px;
+  }
 }
 
 .logo__image-name {
-  padding-top: 2px;
+  padding-top: 1px;
 
   @media (min-width: $tablet-width) {
     display: none;

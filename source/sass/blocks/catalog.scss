@@ -2,29 +2,6 @@
   position: relative;
 }
 
-.catalog__title {
-  font-family: $font-large;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  padding: 26px 20px 41px;
-  margin: 0 auto;
-  border-bottom: 1px solid #ebebeb;
-  max-width: 280px;
-
-
-  @media (min-width: $tablet-width) {
-    padding: 24px 30px 11px;
-    font-size: 60px;
-    line-height: 60px;
-    border: none;
-    max-width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 42px 110px 115px;
-    font-size: 60px;
-    line-height: 60px;
-    max-width: 1220px;
-  }
+.catalog__head-title {
+  @include visually-hidden;
 }
