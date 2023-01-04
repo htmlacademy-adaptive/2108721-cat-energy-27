@@ -12,10 +12,11 @@
   @include font-form;
   @include input-number;
   display: flex;
-  padding: 13px 20px;
+  padding: 13px 20px 14px;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
   border-radius: 0;
+  min-width: 150px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
@@ -31,12 +32,8 @@
     border-color: #cdcdcd;
   }
 
-  &:focus {
-    outline: 2px solid #444444;
-  }
-
   &:focus-visible {
-    outline: none;
+    outline: 2px solid #444444;
   }
 
   &:invalid:not(:placeholder-shown) {
@@ -53,6 +50,7 @@
 }
 
 .input--email {
+  position: relative;
   border-color: #cdcdcd;
 
   &:hover {
@@ -71,14 +69,15 @@
 .input--email__image {
   position: absolute;
   content: "";
-  right: 14px;
+  right: 16px;
 
   @media (min-width: $tablet-width) {
-    right: 20px;
+    right: 18px;
   }
 }
 
 .input--tel {
+  position: relative;
   border-color: #cdcdcd;
 
   &:hover {
@@ -97,9 +96,9 @@
 .input--tel__image {
   position: absolute;
   content: "";
-  right: 16px;
+  right: 13px;
 
   @media (min-width: $tablet-width) {
-    right: 19px;
+    right: 15px;
   }
 }

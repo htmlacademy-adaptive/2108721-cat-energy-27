@@ -1,10 +1,10 @@
 .copyright {
-  padding: 22px 0;
+  padding: 20px 0;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 163px;
+    width: 168px;
   }
 }
 
@@ -33,8 +33,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    gap: 23px;
-    width: 163px;
+    gap: 28px;
+    width: 168px;
     margin: 0;
     padding: 0;
   }
@@ -47,6 +47,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #444444;
+  margin-bottom: 3px;
 }
 
 .copyright__logo {

@@ -1,3 +1,7 @@
+.main--container {
+  flex-grow: 1;
+}
+
 .main__title {
   @include visually-hidden;
 }

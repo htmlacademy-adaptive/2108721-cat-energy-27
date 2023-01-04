@@ -24,7 +24,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 66px;
+    padding: 0 0 67px;
   }
 }
 
@@ -39,8 +39,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    gap: 77px;
     width: 100%;
+    padding-bottom: 2px;
   }
 }
 
@@ -63,7 +64,8 @@
 }
 
 .selection__button {
-  width: 280px;
+  min-width: 280px;
+  width: 100%;
   min-height: 40px;
   font-size: 16px;
 
@@ -80,7 +82,7 @@
 
 .selection__tooltip {
   font-family: $font-low;
-  padding: 21px 0 0;
+  padding: 20px 0 0;
   font-size: 14px;
   line-height: 16px;
 
