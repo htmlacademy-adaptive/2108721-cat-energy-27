@@ -43,14 +43,14 @@
     content: "";
     width: 100%;
     min-height: 302px;
-    background-image: url("../../img/index/about-back-image.png");
+    background-image: url("../../img/index/about-back-image-large@2x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     top: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/about-back-image@2x.png");
+      background-image: url("../../img/index/about-back-image@2x.webp");
       background-size: cover;
     }
 
