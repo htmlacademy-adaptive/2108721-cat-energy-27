@@ -3,6 +3,10 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-left: 60px;
   }
 

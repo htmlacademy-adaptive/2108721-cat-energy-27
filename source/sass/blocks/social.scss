@@ -1,4 +1,5 @@
 .social {
+  padding-bottom: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
@@ -26,8 +27,8 @@
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 15px;
-  padding-top: 34px;
+  padding-bottom: 10px;
+  padding-top: 36px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -70,7 +71,7 @@
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 0;
-  padding: 19px 0 18px;
+  padding: 18px 0 17px;
   list-style-type: none;
   gap: 25px;
   width: 100%;
@@ -85,6 +86,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 30px;
     margin-bottom: 4px;
+    gap: 27px;
   }
 
   &::after {
@@ -100,10 +102,20 @@
 .social__item {
   &:nth-child(2) {
     margin-right: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 3px;
+      margin-top: 1px;
+    }
   }
 
   &:nth-child(3) {
     margin-right: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 2px;
+      margin-right: 10px;
+    }
   }
 }
 

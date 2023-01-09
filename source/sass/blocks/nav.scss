@@ -15,7 +15,7 @@
   padding: 0;
   list-style-type: none;
   z-index: 2;
-  top: 60px;
+  top: 65px;
   left: 0;
   width: 100%;
 
@@ -47,7 +47,7 @@
     border: none;
 
     &:nth-child(2) {
-      margin-right: 2px;
+      margin-right: 5px;
     }
   }
 
@@ -104,6 +104,10 @@
     background-color: #68b738;
     bottom: 3px;
     right: 0;
+
+    @media (min-width: $tablet-width) {
+      bottom: 1px;
+    }
 
     @media (min-width: $desktop-width) {
       bottom: -5px;

@@ -2,6 +2,10 @@
   position: relative;
 }
 
+.catalog--container {
+  flex-grow: 1;
+}
+
 .catalog__head-title {
   @include visually-hidden;
 }
