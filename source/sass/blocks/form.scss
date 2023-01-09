@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+.form--container {
+  flex-grow: 1;
+}
+
 .form__title {
   margin: 0;
   padding: 27px 0 17px;

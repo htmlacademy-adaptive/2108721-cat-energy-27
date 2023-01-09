@@ -16,7 +16,7 @@
   border: 1px solid #e7e7e7;
   flex-grow: 1;
   border-radius: 0;
-  min-width: 150px;
+  min-width: 130px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
@@ -97,6 +97,7 @@
   position: absolute;
   content: "";
   right: 13px;
+  top: 16px;
 
   @media (min-width: $tablet-width) {
     right: 15px;
