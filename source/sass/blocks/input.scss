@@ -57,16 +57,16 @@
     border-color: #e7e7e7;
   }
 
-  &:focus ~ .input--email__image {
+  &:focus ~ .contact-field__email {
     color: #68b738;
   }
 
-  &:invalid:not(:placeholder-shown) ~ .input--email__image {
+  &:invalid:not(:placeholder-shown) ~ .contact-field__email {
     color: #ff8282;
   }
 }
 
-.input--email__image {
+.contact-field__email {
   position: absolute;
   content: "";
   right: 16px;
@@ -84,16 +84,16 @@
     border-color: #e7e7e7;
   }
 
-  &:focus ~ .input--tel__image {
+  &:focus ~ .contact-field__tel {
     color: #68b738;
   }
 
-  &:invalid:not(:placeholder-shown) ~ .input--tel__image {
+  &:invalid:not(:placeholder-shown) ~ .contact-field__tel {
     color: #ff8282;
   }
 }
 
-.input--tel__image {
+.contact-field__tel {
   position: absolute;
   content: "";
   right: 13px;
