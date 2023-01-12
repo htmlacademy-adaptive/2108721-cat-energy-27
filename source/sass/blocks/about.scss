@@ -59,9 +59,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      display: block;
+      display: flex;
       background-image: url("../../img/index/about-back-image-large.webp");
       width: 50%;
+      height: 100%;
       background-size: cover;
       min-height: 694px;
       background-repeat: no-repeat;
