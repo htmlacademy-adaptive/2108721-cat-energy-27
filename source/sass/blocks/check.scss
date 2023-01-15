@@ -21,7 +21,8 @@
     left: 6px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/form/check-sort-image-medium.svg");
+      background-image: url("../../img/form/check-sort-image.svg");
+      background-size: 100% 100%;
       width: 24px;
       height: 19px;
       top: 11px;

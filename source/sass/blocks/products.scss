@@ -320,9 +320,16 @@
 
 .products__item-button {
   @include buttons;
+  padding: 10px 0;
+  box-sizing: border-box;
   grid-column: 1/3;
   grid-row: 3/4;
   width: 100%;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+  }
 }
 
 .products__item--more {
