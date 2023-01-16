@@ -11,7 +11,6 @@
 .input {
   @include font-form;
   @include input-number;
-  display: flex;
   padding: 13px 20px 14px;
   border: 1px solid #e7e7e7;
   flex-grow: 1;
@@ -56,24 +55,6 @@
   &:hover {
     border-color: #e7e7e7;
   }
-
-  &:focus ~ .contact-field__email {
-    color: #68b738;
-  }
-
-  &:invalid:not(:placeholder-shown) ~ .contact-field__email {
-    color: #ff8282;
-  }
-}
-
-.contact-field__email {
-  position: absolute;
-  content: "";
-  right: 16px;
-
-  @media (min-width: $tablet-width) {
-    right: 18px;
-  }
 }
 
 .input--tel {
@@ -83,23 +64,24 @@
   &:hover {
     border-color: #e7e7e7;
   }
-
-  &:focus ~ .contact-field__tel {
-    color: #68b738;
-  }
-
-  &:invalid:not(:placeholder-shown) ~ .contact-field__tel {
-    color: #ff8282;
-  }
 }
 
-.contact-field__tel {
-  position: absolute;
-  content: "";
-  right: 13px;
-  top: 16px;
+.input--comment {
+  min-height: 150px;
+  padding: 8px 15px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    right: 15px;
+    padding: 9px 21px;
+    min-height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 19px;
+  }
+
+  &::placeholder {
+    position: absolute;
+    text-transform: uppercase;
   }
 }

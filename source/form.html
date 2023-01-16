@@ -28,16 +28,16 @@
         </picture>
         <img class="logo__image-name" src="./img/logo-text.svg" width="102" height="18" alt="CAT ENERGY.">
       </a>
-      <nav class="nav nav--nojs">
-        <ul class="nav__list">
-          <li class="nav__item nav__item--color">
-            <a class="nav__link" href="index.html">Главная</a>
+      <nav class="header-nav header-nav--nojs">
+        <ul class="header-nav__list">
+          <li class="header-nav__item ">
+            <a class="header-nav__link " href="index.html">Главная</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link " href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--current" href="#">Подбор программы</a>
+          <li class="header-nav__item">
+            <a class="header-nav__link header-nav__link--current" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -96,27 +96,28 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="selection__field contact-field">
-          <legend class="contact-field__title"> <span class=contact-field__text>Контактные данные
-              (владельца кота)</span></legend>
-          <div class="contact-field__container">
-            <label class="contact-field__name" for="email">E-mail:*</label>
-            <input class="contact-field__input input input--email" id="email" type="email" name="owner"
-              placeholder="KUKLACHEV@GMAIL.COM" required>
-            <svg class="contact-field__email" width="19" height="14" fill="none" role="img" aria-label="конверт.">
-              <use href="img/sprite.svg#envelope"></use>
-            </svg>
-          </div>
-          <div class="contact-field__container">
-            <label class="contact-field__name" for="call">Телефон:*</label>
-            <input class="contact-field__input input input--tel" id="call" type="tel" name="owner"
-              placeholder="8 (960) 900-60-90" required>
-            <svg class="contact-field__tel" width="20" height="20" fill="none" role="img"
-              aria-label="телефонная трубка.">
-              <use href="img/sprite.svg#telephone"></use>
-            </svg>
-          </div>
-        </fieldset>
+
+          <fieldset class="selection__field contact-field">
+            <legend class="contact-field__title"> <span class=contact-field__text>Контактные данные
+                (владельца кота)</span></legend>
+            <div class="contact-field__container">
+              <label class="contact-field__name" for="email">E-mail:*</label>
+              <input class="contact-field__input input input--email" id="email" type="email" name="owner"
+                placeholder="KUKLACHEV@GMAIL.COM" required>
+              <svg class="contact-field__email" width="19" height="14" fill="none" role="img" aria-label="конверт.">
+                <use href="img/sprite.svg#envelope"></use>
+              </svg>
+            </div>
+            <div class="contact-field__container">
+              <label class="contact-field__name" for="call">Телефон:*</label>
+              <input class="contact-field__input input input--tel" id="call" type="tel" name="owner"
+                placeholder="8 (960) 900-60-90" required>
+              <svg class="contact-field__tel" width="20" height="20" fill="none" role="img"
+                aria-label="телефонная трубка.">
+                <use href="img/sprite.svg#telephone"></use>
+              </svg>
+            </div>
+          </fieldset>
         <fieldset class="selection__field comment-field">
           <legend class="comment-field__title"><span class=comment-field__text>Комментарий</span></legend>
           <label class="comment-field__name" for="comment"></label>
@@ -136,8 +137,7 @@
             </li>
             <li class="additional-field__item">
               <label class="additional-field__check check" for="water">
-                <input class="additional-field__input" id="water" name="additional" value="water"
-                  type="checkbox">
+                <input class="additional-field__input" id="water" name="additional" value="water" type="checkbox">
                 <span class="check__sort" tabindex="0"></span>
                 <span class="check__name">питьевая вода</span>
               </label>
@@ -166,10 +166,25 @@
     </div>
   </main>
   <footer class="footer footer--background">
-    <iframe class="footer__map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
-      width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-      title="Офис производителя питания для котов Cat Energy."></iframe>
+    <div class="footer__map-container">
+      <iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.353339847015!2d30.31689977105407!3d59.93750718110091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1669385232410!5m2!1sru!2spl"
+        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Офис производителя питания для котов Cat Energy."></iframe>
+      <picture>
+        <source media="(min-width: 1440px)" type="image/webp"
+          srcset="./img/map-desk.webp 1x, ./img/map-desk@2x.webp 2x">
+        <source media="(min-width: 768px)" type="image/webp"
+          srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="./img/map-desk.png 1x, ./img/map-desk@2x.png 2x" width="1440"
+          height="400">
+        <source media="(min-width: 768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x" width="768"
+          height="400">
+        <img class="footer__map-static" src="./img/map-mobile.png 1x" srcset="./img/map-mobile@2x.png 2x" width="320"
+          height="362" alt="офис компании на карте.">
+      </picture>
+    </div>
     <div class="footer__container">
       <div class="contacts">
         <div class="contacts__container container">

@@ -8,6 +8,7 @@
   cursor: pointer;
   order: 2;
   height: fit-content;
+  margin-right: auto;
 
   &:hover {
     opacity: 0.8;
@@ -56,5 +57,20 @@
 }
 
 .logo--footer {
+  height: fit-content;
   padding-bottom: 1px;
+  margin: 0;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-self: start;
+    width: fit-content;
+  }
 }

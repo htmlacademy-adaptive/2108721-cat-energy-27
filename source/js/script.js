@@ -1,21 +1,21 @@
-let navMain = document.querySelector(".nav");
+let navMain = document.querySelector(".header-nav");
 let navButton = document.querySelector(".header__button");
 
-navMain.classList.remove("nav--nojs");
+navMain.classList.remove("header-nav--nojs");
 
-if (navMain.classList.contains("nav")) {
-  navMain.classList.add("nav--closed");
+if (navMain.classList.contains("header-nav")) {
+  navMain.classList.add("header-nav--closed");
 }
 
 navButton.addEventListener(
   "click",
   function () {
-    if (navMain.classList.contains("nav--closed")) {
-      navMain.classList.remove("nav--closed");
-      navMain.classList.add("nav--opened");
+    if (navMain.classList.contains("header-nav--closed")) {
+      navMain.classList.remove("header-nav--closed");
+      navMain.classList.add("header-nav--opened");
     } else {
-      navMain.classList.add("nav--closed");
-      navMain.classList.remove("nav--opened");
+      navMain.classList.add("header-nav--closed");
+      navMain.classList.remove("header-nav--opened");
     }
   },
   {

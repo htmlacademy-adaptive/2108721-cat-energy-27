@@ -26,16 +26,39 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
+    height: 100%;
   }
+}
+
+.footer__map-container {
+  position: relative;
+  display: flex;
+  width: 100%;
 }
 
 .footer__map {
   border: none;
   width: 100%;
+  z-index: 2;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 400px;
     top: 138px;
+  }
+}
+
+.footer__map-static {
+  position: absolute;
+  min-height: 362px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
   }
 }

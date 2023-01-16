@@ -61,26 +61,6 @@
   }
 }
 
-.input--comment {
-  min-height: 150px;
-  padding: 8px 15px;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    padding: 9px 21px;
-    min-height: 174px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 19px;
-  }
-
-  &::placeholder {
-    position: absolute;
-    text-transform: uppercase;
-  }
-}
-
 .comment-field__name {
   display: none;
 }

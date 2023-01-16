@@ -5,6 +5,10 @@
     padding-left: 58px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+
   & input[type="radio"]:checked + .radio__sort::before {
     position: absolute;
     content: "";
