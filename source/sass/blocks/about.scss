@@ -14,17 +14,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(1%);
     background-position: right 0;
     padding-top: 141px;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 
     &::after {
       position: absolute;
       content: "";
       background-color: rgba(104, 183, 56, 0.85);
-      transform: translate(1%);
-      width: 51%;
+      width: 50%;
       height: 100%;
       top: 0;
       right: 0;
@@ -35,11 +33,10 @@
       content: "";
       background-image: url("../../img/index/about-back-image-large.webp");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: right bottom;
       background-color: #4f4f54;
-      width: 51%;
-      transform: translate(1%);
+      width: 50%;
       height: 100%;
       top: 0;
       right: 0;
@@ -108,7 +105,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 80px 40px 65px;
+    padding: 82px 80px 40px;
     max-width: 420px;
   }
 }
@@ -130,7 +127,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 80px 52px 65px;
+    padding: 0 80px 52px;
     max-width: 420px;
   }
 }
@@ -152,7 +149,7 @@
   @media (min-width: $desktop-width) {
     top: 0;
     left: 50%;
-    transform: translateX(-176px);
+    transform: translateX(-162px);
     width: 552px;
     min-height: 499px;
     z-index: 1;
@@ -178,7 +175,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 66px;
+    margin-left: 80px;
     margin-bottom: 183px;
   }
 }

@@ -47,23 +47,6 @@
   }
 }
 
-.logo--footer {
-  height: fit-content;
-
-  &:hover {
-    opacity: 80%;
-  }
-
-  &:active {
-    opacity: 60%;
-  }
-
-  @media (min-width: $tablet-width) {
-    justify-self: start;
-    width: fit-content;
-  }
-}
-
 .social__list {
   position: relative;
   display: flex;
@@ -135,8 +118,4 @@
   &:focus {
     outline: 2px solid #68b738;
   }
-}
-
-.copyright__logo {
-  padding-bottom: 5px;
 }

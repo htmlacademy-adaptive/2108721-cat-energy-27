@@ -4,6 +4,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 34px;
     padding-bottom: 85px;
   }
 }
@@ -215,7 +216,7 @@
     max-width: 300px;
     padding-top: 3px;
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: 26px;
   }
 }
 
@@ -251,10 +252,13 @@
   }
 }
 
-.supplies__button {
+.supplies__item-button {
   @include buttons;
   line-height: 20px;
   width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
     width: 244px;
